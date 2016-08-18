@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ricardo Zago</title>
+    <link>https://ricardozago.github.io/</link>
+    <description>Recent content on Ricardo Zago</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ricardozago.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exemplos SAS</title>
+      <link>https://ricardozago.github.io/posts/exemplos-sas/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardozago.github.io/posts/exemplos-sas/</guid>
+      <description>O SAS é uma importante ferramenta de análise de dados muito utilizada no mundo empresarial. Seu uso no ambiente doméstico não é tão trivial quanto o Python ou R, que além de gratuitos estão a um download de distância.
+No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de SAS University Edition, essa versão brevemente será substituída pelo SAS OnDemand for Academics. Essas versões podem ser a porta de entrada se você quer aprender a linguagem.</description>
+    </item>
+    
+    <item>
+      <title>Fitando Regressões Não Lineares</title>
+      <link>https://ricardozago.github.io/posts/fitando-regress%C3%B5es-n%C3%A3o-lineares/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardozago.github.io/posts/fitando-regress%C3%B5es-n%C3%A3o-lineares/</guid>
+      <description>Geralmente trabalhamos com regressões lineares: $ y = ax + b $. Como bem sabemos, nem todas as relações são lineares, como um paliativo pode ser utilizadas algumas transformações nos dados na hora de realizar a regressão para que passe a existir uma relação linear, exemplo $ y = ax^2 + b $.
+Podem existir algumas relações que realizar estas transformações pode não ser tão fácil, ou mesmo impossíveis, como a Função de Von Bertalanffy, comum na biologia:</description>
+    </item>
+    
+    <item>
+      <title>Equação ARIMAX</title>
+      <link>https://ricardozago.github.io/posts/equa%C3%A7%C3%A3o-arimax/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardozago.github.io/posts/equa%C3%A7%C3%A3o-arimax/</guid>
+      <description>Séries temporais são uma sequência de valores com uma marcação de data e/ou hora, um datastamp, alguns autores colocam a necessidade de serem igualmente espaçados, o que facilita o seu uso. Exemplos de séries temporais são a cotação do dólar, quantidade de chuva em uma cidade, total de vendas de um produto, etc. Elas são utilizadas nas mais diversas áreas, desde previsão de atendimentos em um hospital a demanda de um bem para alocação de produção.</description>
+    </item>
+    
+    <item>
+      <title>[Livro] O Gene: Uma História Íntima - Siddhartha Mukherjee</title>
+      <link>https://ricardozago.github.io/posts/livro-o-gene-uma-hist%C3%B3ria-%C3%ADntima-siddhartha-mukherjee/</link>
+      <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardozago.github.io/posts/livro-o-gene-uma-hist%C3%B3ria-%C3%ADntima-siddhartha-mukherjee/</guid>
+      <description>Quem não teve um familiar com algum sério problema de saúde, ou você mesmo, e quis conhecer mais sobre a doença. Uma das maiores doenças da humanidade é o câncer, que sempre esteve presente na história, temos indícios de sua existência desde a antiguidade. Em 2010, Siddhartha Mukherjee, um oncologista americano nascido na Índia, lançou seu primeiro livro, O Imperador de Todos os Males: Uma Biografia do Câncer. O livro de 2010 é realmente uma biografia, contando a história desde a antiguidade, passando pelos tratamentos do século IXX, a criação de tratamentos efetivos no século XX, até os mais recentes no lançamento do livro.</description>
+    </item>
+    
+    <item>
+      <title>Placas de aceleração para Machine Learning</title>
+      <link>https://ricardozago.github.io/posts/placas-de-acelera%C3%A7%C3%A3o-para-machine-learning/</link>
+      <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardozago.github.io/posts/placas-de-acelera%C3%A7%C3%A3o-para-machine-learning/</guid>
+      <description>Durante uma parte do doutorado (atualmente interrompido) eu fiz uma disciplina chamada computação corporativa. Nesta disciplina tivemos a oportunidade de estudar diversos temas relacionados a servidores e serviços de computação utilizadas por grandes empresas.
+Como trabalho final na disciplina escrevi um artigo sobre as diversas soluções de placas aceleradoras para Machine Learning. Indo deste as, finadas, Intel Xeon Phi, passando pelas onipresentes soluções da Nvidia, até soluções de startups chinesa.</description>
+    </item>
+    
+    <item>
+      <title>Tipos de variáveis inteiras em Linguagem C, novos tipos em C99 e diretrizes MISRA</title>
+      <link>https://ricardozago.github.io/posts/tipos-de-vari%C3%A1veis-inteiras-em-linguagem-c-novos-tipos-em-c99-e-diretrizes-misra/</link>
+      <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardozago.github.io/posts/tipos-de-vari%C3%A1veis-inteiras-em-linguagem-c-novos-tipos-em-c99-e-diretrizes-misra/</guid>
+      <description>Estávamos almoçando e conversando sobre projetos, desenvolvimento de software embarcado, declaração de variáveis, até que caímos em uma polêmica. Existem diversas maneiras de declarar variáveis do mesmo tipo em linguagem C.
+Quando se declara uma variável em linguagens de alto nível, muitas vezes não nos preocupamos nem com o espaço que ela ocupa em memória e muito menos se este espaço é o mesmo em todas as plataformas. Em algumas linguagens não é nem necessário declarar as variáveis, como no Python, elas são definidas pelo contexto de uso.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://ricardozago.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardozago.github.io/about/</guid>
+      <description> Sou Brasileiro, marido, nerd, atualmente resido em São Paulo, Graduado e Mestre em Engenharia Elétrica pela Unicamp, especialista em Data Science pelo ITA.
+Tenho interesses em:
+Data Science; Análise de séries temporais; NLP e seus modelos no estado da arte; Problemas complexos. </description>
+    </item>
+    
+    <item>
+      <title>Embarcados</title>
+      <link>https://ricardozago.github.io/disciplinas/embarcados/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardozago.github.io/disciplinas/embarcados/</guid>
+      <description>Sistemas Embarcados Cada vez mais convivemos com sistemas embarcados e nem percebemos. Seu uso se tornou ubíquo. Além disso, surgiram ferramentas de baixo custo e fácil uso para o seu desenvolvimento. Seja em hardware com o Arduino e módulos ESP, quanto em software, que atualmente são abundantes.
+Aulas: Em desenvolvimento. Bibliografia: John Catsoulis - Designing Embedded Hardware, 2nd Edition - Create New Computers and Devices - O&amp;rsquo;Reilly Media - 2009 - Site; Michael Barr and Anthony Massa - Programming Embedded Systems, 2nd Edition - With C and GNU Development Tools - 2009 - Site; Lee and Seshia - Introduction to Embedded Systems - A Cyber-Physical Systems Approach - Second Edition - MIT Press - 2017 - Disponível para download no site dos autores.</description>
+    </item>
+    
+    <item>
+      <title>Lectures</title>
+      <link>https://ricardozago.github.io/disciplinas/datascience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardozago.github.io/disciplinas/datascience/</guid>
+      <description>A seguir apresento alguns materiais escritos ao longo do tempo, seja para alguma apresentação pontual ou mesmo a tentativa de gerar conteúdo relevante relacionado a Ciência de Dados.
+Imagem do mapa da Unicamp criada com o projeto Pretty Maps.
+Alguns exemplos de técnicas: Regressão:
+Regressão Linear. É uma técnica muito importante, mas que a maioria dos profissionais do mercado não presta muita atenção por acreditarem ser muito básica. Muitos problemas podem ser resolvidos com essa simples técnica, além de possuir um fundamento estatístico forte, que pode ser útil em algumas aplicações; Regressão não linear, no exemplo assintótica; Séries temporais:</description>
+    </item>
+    
+    <item>
+      <title>Lectures</title>
+      <link>https://ricardozago.github.io/lectures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardozago.github.io/lectures/</guid>
+      <description>Data Science
+Sistemas Embarcados (Embedded Systems)</description>
+    </item>
+    
+    <item>
+      <title>Publicações</title>
+      <link>https://ricardozago.github.io/publicacoes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardozago.github.io/publicacoes/</guid>
+      <description>2020
+Luciane A. S. Pedotti, Ricardo M. Zago, Jefferson Cutrim Rocha, José Gilberto Dalfré Filho, Mateus Giesbrecht, Fabiano Fruett - Failure analysis on a water pump based on a low-cost MEMS accelerometer and machine learning classifiers - Semina: Ciências Exatas e Tecnológicas (Volume: 41, Número: 2, Dezembro 2020) - DOI: 10.5433/1679-0375.2020v41n2p171
+Luciane A. S. Pedotti, Ricardo M. Zago, Mateus Giesbrecht, Fabiano Fruett - Low-cost MEMS accelerometer network for rotating machine vibration diagnostics - IEEE Instrumentation &amp;amp; Measurement Magazine (Volume: 23, Issue: 7, October 2020) - DOI: 10.</description>
+    </item>
+    
+  </channel>
+</rss>
