@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Ricardo Zago</title>
-    <link>https://ricardoz.github.io/tags/</link>
+    <link>https://ricardozago.github.io/tags/</link>
     <description>Recent content in Tags on Ricardo Zago</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Fri, 06 Oct 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ricardoz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ricardozago.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Embedded</title>
-      <link>https://ricardoz.github.io/tags/embedded/</link>
+      <link>https://ricardozago.github.io/tags/embedded/</link>
       <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://ricardoz.github.io/tags/embedded/</guid>
+      <guid>https://ricardozago.github.io/tags/embedded/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Machine Learning</title>
-      <link>https://ricardoz.github.io/tags/machine-learning/</link>
+      <link>https://ricardozago.github.io/tags/machine-learning/</link>
       <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ricardoz.github.io/tags/machine-learning/</guid>
+      <guid>https://ricardozago.github.io/tags/machine-learning/</guid>
       <description></description>
     </item>
     

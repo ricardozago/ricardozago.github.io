@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Ricardo Zago</title>
-    <link>https://ricardoz.github.io/posts/</link>
+    <link>https://ricardozago.github.io/posts/</link>
     <description>Recent content in Posts on Ricardo Zago</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Thu, 03 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ricardoz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ricardozago.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Placas de aceleração para Machine Learning</title>
-      <link>https://ricardoz.github.io/posts/placas-de-acelera%C3%A7%C3%A3o-para-machine-learning/</link>
+      <link>https://ricardozago.github.io/posts/placas-de-acelera%C3%A7%C3%A3o-para-machine-learning/</link>
       <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ricardoz.github.io/posts/placas-de-acelera%C3%A7%C3%A3o-para-machine-learning/</guid>
+      <guid>https://ricardozago.github.io/posts/placas-de-acelera%C3%A7%C3%A3o-para-machine-learning/</guid>
       <description>Durante uma parte do doutorado (atualmente interrompido) eu fiz uma disciplina chamada computação corporativa. Nesta disciplina tivemos a oportunidade de estudar diversos temas relacionados a servidores e serviços de computação utilizadas por grandes empresas.
 Como trabalho final na disciplina escrevi um artigo sobre as diversas soluções de placas aceleradoras para Machine Learning. Indo deste as, finadas, Intel Xeon Phi, passando pelas onipresentes soluções da Nvidia, até soluções de startups chines.</description>
     </item>
     
     <item>
       <title>Trazendo um roteador TP-Link TL-WR541G de volta a vida (só semi brickado)</title>
-      <link>https://ricardoz.github.io/posts/trazendo-um-roteador-tp-link-tl-wr541g-de-volta-a-vida-s%C3%B3-semi-brickado/</link>
+      <link>https://ricardozago.github.io/posts/trazendo-um-roteador-tp-link-tl-wr541g-de-volta-a-vida-s%C3%B3-semi-brickado/</link>
       <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://ricardoz.github.io/posts/trazendo-um-roteador-tp-link-tl-wr541g-de-volta-a-vida-s%C3%B3-semi-brickado/</guid>
+      <guid>https://ricardozago.github.io/posts/trazendo-um-roteador-tp-link-tl-wr541g-de-volta-a-vida-s%C3%B3-semi-brickado/</guid>
       <description>Até semana passada usava na casa dos meus pais um TP-Link TL-WR541G, roteador que escrevi um pouco quando comprei ele em 2010, que me serviu bem durante todos estes anos. Tive um problema meio sério com ele, onde seu DNS foi alterado para um que redirecionava alguns sites como o do Itaú para um site fantasma que tentava roubar senhas, a defesa foi que o Itaú usa um navegador próprio, que não funcionava com o DNS alterado.</description>
     </item>
     
     <item>
       <title>Tipos de variáveis inteiras em Linguagem C, novos tipos em C99 e diretrizes MISRA</title>
-      <link>https://ricardoz.github.io/posts/tipos-de-vari%C3%A1veis-inteiras-em-linguagem-c-novos-tipos-em-c99-e-diretrizes-misra/</link>
+      <link>https://ricardozago.github.io/posts/tipos-de-vari%C3%A1veis-inteiras-em-linguagem-c-novos-tipos-em-c99-e-diretrizes-misra/</link>
       <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://ricardoz.github.io/posts/tipos-de-vari%C3%A1veis-inteiras-em-linguagem-c-novos-tipos-em-c99-e-diretrizes-misra/</guid>
+      <guid>https://ricardozago.github.io/posts/tipos-de-vari%C3%A1veis-inteiras-em-linguagem-c-novos-tipos-em-c99-e-diretrizes-misra/</guid>
       <description>Estávamos almoçando e conversando sobre projetos, desenvolvimento de software embarcado, declaração de variáveis, até que caímos em uma polêmica. Existem diversas maneiras de declarar variáveis do mesmo tipo em linguagem C.
 Quando se declara uma variável em linguagens de alto nível, muitas vezes não nos preocupamos nem com o espaço que ela ocupa em memória e muito menos se este espaço é o mesmo em todas as plataformas. Em algumas linguagens não é nem necessário declarar as variáveis, como no Python, elas são definidas pelo contexto de uso.</description>
     </item>
