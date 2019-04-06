@@ -21,14 +21,5 @@
 Como trabalho final na disciplina escrevi um artigo sobre as diversas soluções de placas aceleradoras para Machine Learning. Indo deste as, finadas, Intel Xeon Phi, passando pelas onipresentes soluções da Nvidia, até soluções de startups chines.</description>
     </item>
     
-    <item>
-      <title>Trazendo um roteador TP-Link TL-WR541G de volta a vida (só semi brickado)</title>
-      <link>https://ricardozago.github.io/posts/trazendo-um-roteador-tp-link-tl-wr541g-de-volta-a-vida-s%C3%B3-semi-brickado/</link>
-      <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://ricardozago.github.io/posts/trazendo-um-roteador-tp-link-tl-wr541g-de-volta-a-vida-s%C3%B3-semi-brickado/</guid>
-      <description>Até semana passada usava na casa dos meus pais um TP-Link TL-WR541G, roteador que escrevi um pouco quando comprei ele em 2010, que me serviu bem durante todos estes anos. Tive um problema meio sério com ele, onde seu DNS foi alterado para um que redirecionava alguns sites como o do Itaú para um site fantasma que tentava roubar senhas, a defesa foi que o Itaú usa um navegador próprio, que não funcionava com o DNS alterado.</description>
-    </item>
-    
   </channel>
 </rss>

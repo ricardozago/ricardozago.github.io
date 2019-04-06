@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ricardozago.github.io/posts/livro-o-gene-uma-hist%C3%B3ria-%C3%ADntima-siddhartha-mukherjee/</loc>
+    <lastmod>2019-03-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ricardozago.github.io/posts/placas-de-acelera%C3%A7%C3%A3o-para-machine-learning/</loc>
     <lastmod>2019-01-03T00:00:00+00:00</lastmod>
   </url>
@@ -23,13 +28,13 @@
   
   <url>
     <loc>https://ricardozago.github.io/categories/blog/</loc>
-    <lastmod>2019-01-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ricardozago.github.io/categories/</loc>
-    <lastmod>2019-01-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -48,12 +53,18 @@
   
   <url>
     <loc>https://ricardozago.github.io/tags/embedded/</loc>
-    <lastmod>2017-10-06T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ricardozago.github.io/disciplinas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ricardozago.github.io/tags/livros/</loc>
+    <lastmod>2019-03-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -64,7 +75,7 @@
   
   <url>
     <loc>https://ricardozago.github.io/posts/</loc>
-    <lastmod>2019-01-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -74,13 +85,13 @@
   
   <url>
     <loc>https://ricardozago.github.io/</loc>
-    <lastmod>2019-01-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ricardozago.github.io/tags/</loc>
-    <lastmod>2017-10-06T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
