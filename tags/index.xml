@@ -6,19 +6,10 @@
     <description>Recent content in Tags on Ricardo Zago</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 10 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ricardozago.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Embedded</title>
-      <link>https://ricardozago.github.io/tags/embedded/</link>
-      <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://ricardozago.github.io/tags/embedded/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Livros</title>
@@ -35,6 +26,15 @@
       <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://ricardozago.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Embedded</title>
+      <link>https://ricardozago.github.io/tags/embedded/</link>
+      <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://ricardozago.github.io/tags/embedded/</guid>
       <description></description>
     </item>
     

@@ -64,7 +64,7 @@ Quando se declara uma variável em linguagens de alto nível, muitas vezes não 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ricardozago.github.io/disciplinas/datascience/</guid>
-      <description>Aulas:  Séries temporais (em desenvolvimento).  Principais ferramentas:  Anaconda - Distribuição Python com as principais bibliotecas incluidas; RStudio - Software para programação em linguagem R, é necessário também instalar a linguagem R.  Bibliografia:  Deep Learning with Python - Francois Chollet - Livro prático, bem mãos na massa, de Deep Learning, escrito pelo criador da biblioteca Keras, que facilita a implementação de modelos. Os notebooks disponíveis no Github do autor são um show a parte, implementando os ensinamentos do livro com explicações, ou seja, apenas com o notebook já é possível entender os conceitos e aplicações.</description>
+      <description>Material desenvolvido:  Séries temporais (em desenvolvimento).  Principais ferramentas:  Anaconda - Distribuição Python com as principais bibliotecas incluidas; RStudio - Software para programação em linguagem R, é necessário também instalar a linguagem R.  Bibliografia:  Python Data Science Handbook - Jake VanderPlas - Livro com o básico do uso de Python em Data Science, está disponível gratuitamente na página do autor. Começa com uma introdução para a linguagem.</description>
     </item>
     
     <item>

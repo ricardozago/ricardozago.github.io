@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Ricardo Zago</title>
+    <title>blog on Ricardo Zago</title>
     <link>https://ricardozago.github.io/categories/blog/</link>
-    <description>Recent content in Blog on Ricardo Zago</description>
+    <description>Recent content in blog on Ricardo Zago</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Sat, 16 Mar 2019 00:00:00 +0000</lastBuildDate>
