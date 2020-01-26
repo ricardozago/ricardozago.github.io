@@ -46,7 +46,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.1" />
   </head>
 
   <body class=" ">
@@ -118,28 +118,19 @@
 
       <div>
         <p>Até semana passada usava na casa dos meus pais um TP-Link TL-WR541G, roteador que escrevi um pouco quando comprei ele em 2010, que me serviu bem durante todos estes anos. Tive um problema meio sério com ele, onde seu DNS foi alterado para um que redirecionava alguns sites como o do Itaú para um site fantasma que tentava roubar senhas, a defesa foi que o Itaú usa um navegador próprio, que não funcionava com o DNS alterado. Caso se usasse o Guardião, provavelmente o site também são seria aberto. O aplicativo de Android também não funcionava.</p>
-
 <p>No passado tive problemas com modems ADSL que também tinham seu endereço de DNS trocados apenas de ficarem conectados a internet, <a href="https://linhadefensiva.org/2012/03/20/criminosos-alteram-dns-de-modems-usando-falha-para-realizar-fraudes/">era um bug de firmware</a>, que foi corrigido em versões mais atuais. Eu atualizei e nunca mais voltou a ocorrer. Por este motivo, eu sempre travo o DNS do roteador para utilizar o do Google (8.8.8.8 e 8.8.4.4), que considero bastante estável e seguro. Mas desta vez, o que foi alterado foram as configurações do roteador. O interessante é que a senha do roteador não era a padrão, nem a senha da rede sem fio trivial. Aparentemente <a href="http://www.administradores.com.br/artigos/tecnologia/se-voce-usa-o-internet-banking-no-wi-fi-leia-isto-aqui-antes-que-seja-tarde/104500/">este tipo de golpe está se tornando comum</a> em roteadores também.</p>
-
 <figure class="centered">
     <img src="/2017/roteador_tplink.jpg"
          alt="My helpful screenshot"/> 
 </figure>
 
-
 <p>Minha primeira reação foi retornar as configurações de fabrica e também atualizar o firmware, apesar de acreditar que ambas as ações só seriam paliativas, já que a atualização também era muito antiga e provavelmente não corrigiria a falha, mas não teria muito mais o que fazer. Só que a atualização de firmware não ocorreu bem e o roteador não funcionou corretamente mais, ele até ligava e abria a interface web, mas as páginas não estavam disponíveis, mesmo a página de atualização de firmware.</p>
-
 <p>Desta maneira fiquei com um roteador que funcionava, mas não era possível alterar as configurações de fabrica, ou seja, um roteador praticamente inútil. Tentei métodos de <a href="https://www.dd-wrt.com/wiki/index.php/Recover_from_a_Bad_Flash">recuperação de firmware usando TFTP</a>, mas aparentemente o roteador era velho demais e não possui suporte a este método. <a href="https://wiki.openwrt.org/doc/hardware/port.serial">Tentei utilizar o as portas internas UART</a>, soldando os conectores e usando um Arduino como conversor UART/USB para entender o que estava acontecendo, mas nada feito também, conseguia ver o log de boot do roteador e enviar comandos, mas a opção de enviar um firmware não funcionava, <a href="http://www.mounirorfi.com/blog/2012/11/10/exploring-the-tp-link-wr542g-slash-wr642g/">na realidade apenas 3 comandos funcionavam</a>.</p>
-
 <p>No dia seguinte ao problema, antes de tentar estas soluções eu já comprei um outro roteador, um TP-Link Archer C20 v4, além deste problema de segurança, a velocidade da conexão sem fio padrão G do antigo roteador já começava a ser um gargalo para a rede. Então recuperar o roteador não era uma necessidade, apenas um desafio que gostaria de atingir.</p>
-
 <p>Meu próximo passo seria tentar gravar a memória Flash do roteador diretamente com um gravador. Porém ai existem muitos problemas, o correto seria tirar o chip da placa do roteador, soldar em outra, gravar e voltar ele para a placa do roteador. A chance de eu danificar o chip e a placa seriam bem alta. Tentar gravar ele no local também seria uma possibilidade, mas outros componentes também são alimentados pela mesma linha de alimentação da memória, logo poderia ligar o roteador inteiro, ou ao menos o SoC e ele também tentaria enviar comandos ao chip de memória. Como não tenho um gravador para este tipo de memória, provavelmente iria escrever programas para o Arduino fazer a gravação e leitura, não saberia se eventuais problemas seriam no meu programa ou pelo roteador tentar ler o chip. Ou seja, é uma solução complicada, que tomaria muito tempo.</p>
-
 <p>Mas dai ontem eu pensei, poxa o roteador liga, ele não tá brickado e se de alguma maneira eu conseguir enviar o firmware para ele, mas como? Cheguei a <a href="https://gist.github.com/teslamint/7688775">um pequeno script em bash</a> para atualizar firmwares em massa, sem utilizar a interface web. E não é que funcionou? Eu não dava nada, foi tão rápido que nem apareceu que tinha atualizado, mas a interface voltou a funcionar.</p>
-
 <p>Eu criei um <a href="https://github.com/ricardozago/TP-WR541G">repositório no Github</a> com os arquivos necessários. O <a href="https://github.com/ricardozago/TP-WR541G/blob/master/wr541gv7_en_4_7_13_up(101203).bin">firmware</a> e o <a href="https://github.com/ricardozago/TP-WR541G/blob/master/tplink.sh">script</a>. Também coloquei o <a href="https://github.com/ricardozago/TP-WR541G/blob/master/Boot%20Log.txt">log do boot do firmware</a>, caso tenham curiosidade.</p>
-
-<p><a href="Lendo mais sobre a falha">Lendo mais sobre a falha</a> cheguei a conclusão que é seguro utilizar o roteador. Basta fazer logoff quando tiver mexido nas configurações de firmware (ou apagar os cookies ou fechar e abrir o browser). A falha está em entrar em um site com um script mal intencionado que envia um comando para o endereço do roteador (que quase sempre é 192.168.0.1 ou 192.168.1.1), o roteador não deveria reconhecer o comando, mas aceita trocando o DNS.</p>
+<p>[Lendo mais sobre a falha](Lendo mais sobre a falha) cheguei a conclusão que é seguro utilizar o roteador. Basta fazer logoff quando tiver mexido nas configurações de firmware (ou apagar os cookies ou fechar e abrir o browser). A falha está em entrar em um site com um script mal intencionado que envia um comando para o endereço do roteador (que quase sempre é 192.168.0.1 ou 192.168.1.1), o roteador não deveria reconhecer o comando, mas aceita trocando o DNS.</p>
 
       </div>
 

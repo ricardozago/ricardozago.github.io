@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ricardo Zago</title>
@@ -65,7 +65,7 @@ Tenho interesses em ciência de dados, análise de séries temporais, sistemas e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/disciplinas/datascience/</guid>
-      <description>Material desenvolvido:  Séries temporais (em desenvolvimento).  Principais ferramentas:  Anaconda - Distribuição Python com as principais bibliotecas incluidas; RStudio - Software para programação em linguagem R, é necessário também instalar a linguagem R.  Bibliografia:  Python Data Science Handbook - Jake VanderPlas - Livro com o básico do uso de Python em Data Science, está disponível gratuitamente na página do autor. Começa com uma introdução para a linguagem.</description>
+      <description>Material desenvolvido:  Séries temporais (em desenvolvimento).  Principais ferramentas:  Anaconda - Distribuição Python com as principais bibliotecas incluidas; RStudio - Software para programação em linguagem R, é necessário também instalar a linguagem R.  Bibliografia:   Python Data Science Handbook - Jake VanderPlas - Livro com o básico do uso de Python em Data Science, está disponível gratuitamente na página do autor. Começa com uma introdução para a linguagem.</description>
     </item>
     
     <item>
@@ -84,8 +84,8 @@ Aulas:  Em desenvolvimento.  Bibliografia:  John Catsoulis - Designing Embedded 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/disciplinas/</guid>
-      <description> Sistemas Embarcados (Embedded Systems)
- Data Science
+      <description>  Sistemas Embarcados (Embedded Systems)
+  Data Science
   </description>
     </item>
     
@@ -96,8 +96,8 @@ Aulas:  Em desenvolvimento.  Bibliografia:  John Catsoulis - Designing Embedded 
       
       <guid>/publicacoes/</guid>
       <description>2017
- Luciane A. S. Pedotti, Ricardo M. Zago, Fabiano Fruett - Fault diagnostics in rotary machines through spectral vibration analysis using low-cost MEMS devices - IEEE Instrumentation &amp;amp; Measurement Magazine (Volume: 20, Issue: 6, December 2017) - DOI: 10.1109/MIM.2017.8121950;
- Ricardo M. Zago, Fabiano Fruett - A low-cost solar generation monitoring system suitable for internet of things - 2017 2nd International Symposium on Instrumentation Systems, Circuits and Transducers (INSCIT) - DOI: 10.</description>
+  Luciane A. S. Pedotti, Ricardo M. Zago, Fabiano Fruett - Fault diagnostics in rotary machines through spectral vibration analysis using low-cost MEMS devices - IEEE Instrumentation &amp;amp; Measurement Magazine (Volume: 20, Issue: 6, December 2017) - DOI: 10.1109/MIM.2017.8121950;
+  Ricardo M. Zago, Fabiano Fruett - A low-cost solar generation monitoring system suitable for internet of things - 2017 2nd International Symposium on Instrumentation Systems, Circuits and Transducers (INSCIT) - DOI: 10.</description>
     </item>
     
   </channel>

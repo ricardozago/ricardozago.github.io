@@ -47,7 +47,7 @@ Quando se declara uma variável em linguagens de alto nível, muitas vezes não 
 
     
 
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.1" />
   </head>
 
   <body class=" ">
@@ -123,19 +123,12 @@ Quando se declara uma variável em linguagens de alto nível, muitas vezes não 
          alt="C-Book-Cover"/> 
 </figure>
 
-
 <p>Estávamos almoçando e conversando sobre projetos, desenvolvimento de software embarcado, declaração de variáveis, até que caímos em uma polêmica. Existem diversas maneiras de declarar variáveis do mesmo tipo em linguagem C.</p>
-
 <p>Quando se declara uma variável em linguagens de alto nível, muitas vezes não nos preocupamos nem com o espaço que ela ocupa em memória e muito menos se este espaço é o mesmo em todas as plataformas. Em algumas linguagens não é nem necessário declarar as variáveis, como no Python, elas são definidas pelo contexto de uso. Além disso, no Python, o tipo inteiro possui tamanho arbitrário, permitindo fazer cálculos como fatoriais de grandes números facilmente.</p>
-
 <p>No caso de sistemas embarcados, devemos nos preocupar com o espaço ocupado pelas variáveis, já que eles possuem pouca memória. E como o código pode ser executado em um microcontrolador de 8 bit ou 32 bit, que definem de maneira diferente os tipos de dados, o tamanho de cada tipo é importante.</p>
-
 <p>No desenvolvimento de sistemas embarcados é muito comum o uso de mascaramento de memória para alterar o valor de registradores, com o intuito de configurar periféricos ou o próprio microcontrolador. Caso seja utilizado uma variável do tipo inteiro, por exemplo, ela pode ter 2 bytes (16 bits) em um microcontrolador e 32 bits em outro, o que possivelmente ocasionará problemas.</p>
-
 <p>A linguem C foi desenvolvida por Dennis Ritchie para permitir a portabilidade do sistema operacional Unix entre diversos microprocessadores. Inicialmente a o padrão de fato para a linguagem C foi o livro <a href="https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/">The C Programming Language de Brian Kernighan e Ken Thompson</a>. Posteriormente a linguagem foi padronizada pelo American National Standards Institute em uma norma que ficou conhecida como C89 ou C90. Esta norma é a implementação básica da linguagem C, normas posteriores foram criadas como C95, C99, C11, mas nem todos os compiladores suportam todas as funções. O <a href="http://www.keil.com/support/man/docs/armcc/armcc_chr1359124241911.htm">ARM Keil</a>, por exemplo, apenas oferece suporta para algumas funcionalidades da C99.</p>
-
 <p>A tabela a baixo demonstra os tamanhos de inteiros com sinal possíveis no C89. Não existe nada definindo que o <code>long int</code> possua 32 bits, apesar da maioria dos programadores (eu incluso) considerar isto como certo. No geral, isto não é um problema no desenvolvimento de sistemas embarcados, já que todos os compiladores para estas plataformas fazem uso de 32 bits.</p>
-
 <table>
 <thead>
 <tr>
@@ -144,26 +137,22 @@ Quando se declara uma variável em linguagens de alto nível, muitas vezes não 
 <th align="center">Intervalo mínimo</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">signed char</td>
 <td align="center">8 bits</td>
 <td align="center">-127, +127</td>
 </tr>
-
 <tr>
 <td align="center">shor int</td>
 <td align="center">16 bits</td>
 <td align="center">-32.767, +32.767</td>
 </tr>
-
 <tr>
 <td align="center">int</td>
 <td align="center">short &lt;= int &lt;= long</td>
 <td align="center">&ndash;</td>
 </tr>
-
 <tr>
 <td align="center">long int</td>
 <td align="center">32 bits</td>
@@ -171,9 +160,7 @@ Quando se declara uma variável em linguagens de alto nível, muitas vezes não 
 </tr>
 </tbody>
 </table>
-
 <p>O problema começa quando se começa a utilizar um sistema operacional, que podem fazer considerações diferentes. <a href="https://en.wikipedia.org/wiki/64-bit_computing#64-bit_data_models">Na tabela abaixo é feita uma comparação entre o Windows e o Linux</a>.</p>
-
 <table>
 <thead>
 <tr>
@@ -182,26 +169,22 @@ Quando se declara uma variável em linguagens de alto nível, muitas vezes não 
 <th align="center">LP64 (Linux)</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">signed char</td>
 <td align="center">8 bits</td>
 <td align="center">8 bits</td>
 </tr>
-
 <tr>
 <td align="center">shor int</td>
 <td align="center">16 bits</td>
 <td align="center">16 bits</td>
 </tr>
-
 <tr>
 <td align="center">int</td>
 <td align="center">32 bits</td>
 <td align="center">32 bits</td>
 </tr>
-
 <tr>
 <td align="center">long int</td>
 <td align="center">32 bits</td>
@@ -209,21 +192,17 @@ Quando se declara uma variável em linguagens de alto nível, muitas vezes não 
 </tr>
 </tbody>
 </table>
-
 <p>Desta maneira se um código for reaproveitado de um sistema embarcado para um com o sistema operacional Linux as variáveis declaradas como <code>long int</code> passarão de 32 bits para 64 bits. No C99 foi criado o tipo <code>long long int</code>, que o Windows faz uso para variáveis de 64 bits.</p>
-
 <p>Para evitar esta confusão de tamanhos variando com as implementações, <a href="https://en.wikipedia.org/wiki/C_data_types#stdint.h">o C99 adicionou a biblioteca stdint.h</a>, que define, dentre outros, os tipos <code>int8_t</code>, <code>int16_t</code>, <code>int32_t</code>, <code>uint8_t</code>, <code>uint16_t</code> e <code>uint32_t</code>. Estes tipos são fixos em todas as plataformas, já que a biblioteca os define para sempre ter o mesmo tamanho independentemente da plataforma. A presença ou não do prefixo <code>u</code> nos nomes das variáveis indica se os inteiros possuem ou não sinal. No caso do tipo <code>char</code> isto ajuda a evitar ambiguidades, já que o tipo do char depende da implementação (o padrão C deixa isso em aberto).</p>
-<div class="highlight"><pre class="chroma">// Possível definição dos tipos do C99 na biblioteca
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// Possível definição dos tipos do C99 na biblioteca
 typedef signed char int8_t;
 typedef signed short int16_t;
 typedef signed int int32_t;
 typedef unsigned char uint8_t;
 typedef unsigned short uint16_t;
-typedef unsigned int uint32_t;</pre></div>
-<p>Esta biblioteca também adiciona, dentre outras coisas: <code>int_fastN_t</code>, que indica o formato inteiro mais rápido da plataforma que possua ao menos N bits; <code>intmax_t</code> o maior formato inteiro disponível.</p>
-
+typedef unsigned int uint32_t;
+</code></pre></div><p>Esta biblioteca também adiciona, dentre outras coisas: <code>int_fastN_t</code>, que indica o formato inteiro mais rápido da plataforma que possua ao menos N bits; <code>intmax_t</code> o maior formato inteiro disponível.</p>
 <p>No geral, qualquer compilador recente deve oferecer suporte a este tipo de declaração, que facilita muito a leitura do código. Um possível problema, apesar de difícil ocorrência, é se o usuário utilizar uma biblioteca que visa uma plataforma em outra e/ou ele próprio alterar a biblioteca alterando os typedefs de maneira errada.</p>
-
 <p>No geral o uso desse recurso no C99 é muito importante pois facilita portar o código de uma plataforma para outra, sem problemas com o tamanho das variáveis. Além disso, as diretrizes redigidas pela <a href="https://en.wikipedia.org/wiki/MISRA_C">MISRA (Motor Industry Software Reliability Association)</a> em relação a linguagem C, em sua <a href="https://betterembsw.blogspot.com.br/2014/08/coding-style-guidelines-and-misra-c.html">regra 6.3 recomenda indicar o tamanho e a presença de sinal nas declarações de variáveis</a>. Estas diretrizes são utilizadas no desenvolvimento de softwares embarcados em grandes companhias, em particular a indústria automobilística, mas além disso em outras áreas, como em projetos de sistemas críticos. São base das diretrizes de projetos do Laboratório de Propulsão a Jato da NASA e do projeto Joint Strike Fighter, o caça Lockheed Martin F-35 Lightning II.</p>
 
       </div>
