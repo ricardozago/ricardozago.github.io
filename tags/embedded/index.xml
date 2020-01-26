@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Embedded on Ricardo Zago</title>
-    <link>https://ricardozago.github.io/tags/embedded/</link>
+    <link>/tags/embedded/</link>
     <description>Recent content in Embedded on Ricardo Zago</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Sun, 10 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ricardozago.github.io/tags/embedded/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/embedded/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Trazendo um roteador TP-Link TL-WR541G de volta a vida (só semi brickado)</title>
-      <link>https://ricardozago.github.io/posts/trazendo-um-roteador-tp-link-tl-wr541g-de-volta-a-vida-s%C3%B3-semi-brickado/</link>
+      <link>/posts/trazendo-um-roteador-tp-link-tl-wr541g-de-volta-a-vida-s%C3%B3-semi-brickado/</link>
       <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://ricardozago.github.io/posts/trazendo-um-roteador-tp-link-tl-wr541g-de-volta-a-vida-s%C3%B3-semi-brickado/</guid>
+      <guid>/posts/trazendo-um-roteador-tp-link-tl-wr541g-de-volta-a-vida-s%C3%B3-semi-brickado/</guid>
       <description>Até semana passada usava na casa dos meus pais um TP-Link TL-WR541G, roteador que escrevi um pouco quando comprei ele em 2010, que me serviu bem durante todos estes anos. Tive um problema meio sério com ele, onde seu DNS foi alterado para um que redirecionava alguns sites como o do Itaú para um site fantasma que tentava roubar senhas, a defesa foi que o Itaú usa um navegador próprio, que não funcionava com o DNS alterado.</description>
     </item>
     
     <item>
       <title>Tipos de variáveis inteiras em Linguagem C, novos tipos em C99 e diretrizes MISRA</title>
-      <link>https://ricardozago.github.io/posts/tipos-de-vari%C3%A1veis-inteiras-em-linguagem-c-novos-tipos-em-c99-e-diretrizes-misra/</link>
+      <link>/posts/tipos-de-vari%C3%A1veis-inteiras-em-linguagem-c-novos-tipos-em-c99-e-diretrizes-misra/</link>
       <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://ricardozago.github.io/posts/tipos-de-vari%C3%A1veis-inteiras-em-linguagem-c-novos-tipos-em-c99-e-diretrizes-misra/</guid>
+      <guid>/posts/tipos-de-vari%C3%A1veis-inteiras-em-linguagem-c-novos-tipos-em-c99-e-diretrizes-misra/</guid>
       <description>Estávamos almoçando e conversando sobre projetos, desenvolvimento de software embarcado, declaração de variáveis, até que caímos em uma polêmica. Existem diversas maneiras de declarar variáveis do mesmo tipo em linguagem C.
 Quando se declara uma variável em linguagens de alto nível, muitas vezes não nos preocupamos nem com o espaço que ela ocupa em memória e muito menos se este espaço é o mesmo em todas as plataformas. Em algumas linguagens não é nem necessário declarar as variáveis, como no Python, elas são definidas pelo contexto de uso.</description>
     </item>

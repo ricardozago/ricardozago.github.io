@@ -15,12 +15,12 @@
 Quando se declara uma variável em linguagens de alto nível, muitas vezes não nos preocupamos nem com o espaço que ela ocupa em memória e muito menos se este espaço é o mesmo em todas as plataformas. Em algumas linguagens não é nem necessário declarar as variáveis, como no Python, elas são definidas pelo contexto de uso."/>
 
 
-    <base href="https://ricardozago.github.io/posts/tipos-de-vari%C3%A1veis-inteiras-em-linguagem-c-novos-tipos-em-c99-e-diretrizes-misra/">
+    <base href="/posts/tipos-de-vari%C3%A1veis-inteiras-em-linguagem-c-novos-tipos-em-c99-e-diretrizes-misra/">
     <title>
   Tipos de variáveis inteiras em Linguagem C, novos tipos em C99 e diretrizes MISRA · Ricardo Zago
 </title>
 
-    <link rel="canonical" href="https://ricardozago.github.io/posts/tipos-de-vari%C3%A1veis-inteiras-em-linguagem-c-novos-tipos-em-c99-e-diretrizes-misra/">
+    <link rel="canonical" href="/posts/tipos-de-vari%C3%A1veis-inteiras-em-linguagem-c-novos-tipos-em-c99-e-diretrizes-misra/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
@@ -29,7 +29,7 @@ Quando se declara uma variável em linguagens de alto nível, muitas vezes não 
     
       
       
-      <link rel="stylesheet" href="https://ricardozago.github.io/css/coder.min.16aa028efcaafce56aa3cdefecece864288ed0a2da0f8ea6b9cf0ad6073176c7.css" integrity="sha256-FqoCjvyq/OVqo83v7OzoZCiO0KLaD46muc8K1gcxdsc=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="/css/coder.min.8881182b3ec36ffd9c735306f7e16ce9b1129ebc650e069e7c4114827e9d9b23.css" integrity="sha256-iIEYKz7Db/2cc1MG9&#43;Fs6bESnrxlDgaefEEUgn6dmyM=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -37,11 +37,13 @@ Quando se declara uma variável em linguagens de alto nível, muitas vezes não 
     
 
     
-      <link rel="stylesheet" href="https://ricardozago.github.io/css/custom.css">
+      <link rel="stylesheet" href="/css/custom.css">
+    
+      <link rel="stylesheet" href="/css/syntax.css">
     
 
-    <link rel="icon" type="image/png" href="https://ricardozago.github.io/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://ricardozago.github.io/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
 
     
 
@@ -52,7 +54,7 @@ Quando se declara uma variável em linguagens de alto nível, muitas vezes não 
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="https://ricardozago.github.io/">
+    <a class="navigation-title" href="">
       Ricardo Zago
     </a>
     <input type="checkbox" id="menu-toggle" />
@@ -61,19 +63,19 @@ Quando se declara uma variável em linguagens de alto nível, muitas vezes não 
       
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://ricardozago.github.io/posts/">Blog</a>
+            <a class="navigation-link" href="/posts/">Blog</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://ricardozago.github.io/disciplinas/">Lectures</a>
+            <a class="navigation-link" href="/disciplinas/">Lectures</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://ricardozago.github.io/publicacoes/">Publications</a>
+            <a class="navigation-link" href="/publicacoes/">Publications</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://ricardozago.github.io/about/">About</a>
+            <a class="navigation-link" href="/about/">About</a>
           </li>
         
       
@@ -106,17 +108,21 @@ Quando se declara uma variável em linguagens de alto nível, muitas vezes não 
           </div>
           <div class="categories">
   <i class="fas fa-folder"></i>
-    <a href="https://ricardozago.github.io/categories/blog/">blog</a></div>
+    <a href="/categories/blog/">blog</a></div>
 
           <div class="tags">
   <i class="fas fa-tag"></i>
-    <a href="https://ricardozago.github.io/tags/embedded/">Embedded</a></div>
+    <a href="/tags/embedded/">Embedded</a></div>
 
         </div>
       </header>
 
       <div>
-        <p><img src="https://ricardozago.github.io/2017/c-language.png" alt="C-Book-Cover" /></p>
+        <figure class="right-aligned">
+    <img src="/2017/c-language.png"
+         alt="C-Book-Cover"/> 
+</figure>
+
 
 <p>Estávamos almoçando e conversando sobre projetos, desenvolvimento de software embarcado, declaração de variáveis, até que caímos em uma polêmica. Existem diversas maneiras de declarar variáveis do mesmo tipo em linguagem C.</p>
 
@@ -207,7 +213,7 @@ Quando se declara uma variável em linguagens de alto nível, muitas vezes não 
 <p>Desta maneira se um código for reaproveitado de um sistema embarcado para um com o sistema operacional Linux as variáveis declaradas como <code>long int</code> passarão de 32 bits para 64 bits. No C99 foi criado o tipo <code>long long int</code>, que o Windows faz uso para variáveis de 64 bits.</p>
 
 <p>Para evitar esta confusão de tamanhos variando com as implementações, <a href="https://en.wikipedia.org/wiki/C_data_types#stdint.h">o C99 adicionou a biblioteca stdint.h</a>, que define, dentre outros, os tipos <code>int8_t</code>, <code>int16_t</code>, <code>int32_t</code>, <code>uint8_t</code>, <code>uint16_t</code> e <code>uint32_t</code>. Estes tipos são fixos em todas as plataformas, já que a biblioteca os define para sempre ter o mesmo tamanho independentemente da plataforma. A presença ou não do prefixo <code>u</code> nos nomes das variáveis indica se os inteiros possuem ou não sinal. No caso do tipo <code>char</code> isto ajuda a evitar ambiguidades, já que o tipo do char depende da implementação (o padrão C deixa isso em aberto).</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">// Possível definição dos tipos do C99 na biblioteca
+<div class="highlight"><pre class="chroma">// Possível definição dos tipos do C99 na biblioteca
 typedef signed char int8_t;
 typedef signed short int16_t;
 typedef signed int int32_t;
@@ -237,7 +243,7 @@ typedef unsigned int uint32_t;</pre></div>
     
       <p>Ricardo Zago</p>
     
-     © 2019
+     © 2020
     
        · 
       Promovido por <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.

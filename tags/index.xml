@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Ricardo Zago</title>
-    <link>https://ricardozago.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Ricardo Zago</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Sat, 16 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ricardozago.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Livros</title>
-      <link>https://ricardozago.github.io/tags/livros/</link>
+      <link>/tags/livros/</link>
       <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ricardozago.github.io/tags/livros/</guid>
+      <guid>/tags/livros/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Machine Learning</title>
-      <link>https://ricardozago.github.io/tags/machine-learning/</link>
+      <link>/tags/machine-learning/</link>
       <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ricardozago.github.io/tags/machine-learning/</guid>
+      <guid>/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Embedded</title>
-      <link>https://ricardozago.github.io/tags/embedded/</link>
+      <link>/tags/embedded/</link>
       <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://ricardozago.github.io/tags/embedded/</guid>
+      <guid>/tags/embedded/</guid>
       <description></description>
     </item>
     
