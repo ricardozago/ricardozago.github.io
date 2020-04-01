@@ -1,0 +1,57 @@
++++ 
+date = "2020-02-15"
+title = "Equação ARIMAX"
+slug = "Equação ARIMAX"
+tags = ["Data Science"]
+categories = ["blog"]
++++
+
+Series temporais são uma sequência de valores com uma marcação de data e/ou hora, um *datastamp*, alguns autores colocam a necessidade de serem igualmente espaçados, o que facilita o seu uso. Exemplos de séries temporais são a cotação do dólar, quantidade de chuva em uma cidade, total de vendas de um produto, etc. Elas são utilizadas nas mais diversas áreas, desde previsão de atendimentos em um hospital a demanda de um bem para alocação de produção.
+
+Neste pequeno texto, não tenho o intuito de explicar a técnicas ARIMA (ou ARIMAX), existem [ótimos textos disponíveis na internet](https://robjhyndman.com/hyndsight/fpp/) que o fazem. Desta maneira, suponho já certa familiaridade com a técnica.
+
+Uma ressalva é que vejo um certo preconceito com o ARIMA, já que o uso de redes neurais muitas vezes resulta em melhores predições. O ARIMA é a técnica clássica, com um forte fundamente estatístico, que permite a criação de um intervalo de confiança em torno da predição, fácil interpretabilidade e o uso de poucos pontos observados para o desenvolvimento do modelo.
+
+A sigla SARIMAX significa *Seasonal AutoRegressive Integrated Moving-Average with eXogenous regressors*, onde cada termo representa:
+
+- **S** - Para sazonalidade, por exemplo todo mês de dezembro ocorre um crescimento das vendas devido ao natal;
+- **AR** - Utiliza os termos passados para explicar os futuros, os parâmetros são indicados pela letra grega $ \phi{} $;
+- **I** - Diferencia a série para atender aos requisitos de estacionariedade;
+- **MA** - Utiliza os erros passados para explicar os valores futuros, os parâmetros são indicados pela letra grega $ \theta{} $;
+- **X** - Utiliza uma variável exógena para explicar a série. Exemplo, utilizar o risco país para explicar a cotação do dólar.
+
+O uso de uma variável exógena se justifica em um modelo ARIMA devido a possibilidade de que uma outra série explique a série a ser modelada. É fácil pensar que o total de vendas em uma cidade litorânea seja correlacionada com a quantidade de turistas.
+
+Existem duas maneiras de adicionar a constante e as variáveis exógenas ao modelo de regressão. A primeira é utilizando o modelo ARMAX, onde os termos são simplesmente adicionados na equação, por exemplo uma equação de um modelo com AR2 e MA2, constante e uma variável exógena:
+
+$$ \hat{y}\_{t} = c + \beta{}x\_t + \phi{}\_1 y\_{t-1} + \phi{}\_2 y\_{t-2} - \theta{}\_1 \varepsilon{}\_{t-1} - \theta{}\_2 \varepsilon{}\_{t-2} + \varepsilon{\_t} $$
+
+O grande ponto é que as bibliotecas de software mais utilizadas para o ARIMA, implementam a regressão com os erros da ARMA (*regression with ARMA errors*), como o ótimo pacote do R [Forecast](https://pkg.robjhyndman.com/forecast/). Desta maneira, a equação é:
+
+$$ \hat{y}\_{t} = c + \beta{} x\_t + n\_t $$
+
+$$ n\_t = \phi{}\_1 n\_{t-1} + \phi{}\_2 n\_{t-2} - \theta{}\_1 \varepsilon{}\_{t-1} - \theta{}\_2 \varepsilon{}\_{t-2} + \varepsilon{\_t} $$
+
+O motivo é que o coeficiente $ \beta{} $ no primeiro caso perde a explicabilidade, já que o efeito da variável exógena também é trazido do termo autoregressivo. Enquanto no segundo caso, o termo tem seu significado usual. A explicação mais detalhada pode ser lida neste ótimo [post (em inglês) de Rob J Hyndman](https://robjhyndman.com/hyndsight/arimax/), criador do pacote Forecast do R.
+
+Por fim, podemos deduzir a equação de um ARMAX (2,0,2) para curiosidade ou mesmo implantação no Excel (meu caso). Segue:
+
+$$ \hat{y}\_{t-1} = c + \beta{} x\_{t-1} + n\_{t-1} $$
+
+Isolando $ n\_{t-1} $:
+
+$$ n\_{t-1} = \hat{y}\_{t-1} - \beta{} x\_{t-1} - c $$
+
+Para $ n\_{t-2} $:
+
+$$ n\_{t-2} = \hat{y}\_{t-2} - \beta{} x\_{t-2} - c $$
+
+Substituindo nas equações da regressão com erros ARMA:
+
+$$ \hat{y}\_{t} = c + \beta{} x\_t + n\_t $$
+
+$$ n\_t = \phi{}\_1 (\hat{y}\_{t-1} - \beta{} x\_{t-1} - c) + \phi{}\_2 (\hat{y}\_{t-2} - \beta{} x\_{t-2} - c) - \theta{}\_1 \varepsilon{}\_{t-1} - \theta{}\_2 \varepsilon{}\_{t-2} $$
+
+Juntando tudo:
+
+$$ \hat{y}\_{t} = c + \beta{} x\_t + \phi{}\_1 (\hat{y}\_{t-1} - \beta{} x\_{t-1} - c) + \phi{}\_2 (\hat{y}\_{t-2} - \beta{} x\_{t-2} - c) - \theta{}\_1 \varepsilon{}\_{t-1} - \theta{}\_2 \varepsilon{}\_{t-2} $$
