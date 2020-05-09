@@ -11,10 +11,12 @@
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Data Science"/>
-<meta name="twitter:description" content="Material desenvolvido:  Séries temporais (em desenvolvimento).  Principais ferramentas:  Anaconda - Distribuição Python com as principais bibliotecas incluidas; RStudio - Software para programação em linguagem R, é necessário também instalar a linguagem R.  Bibliografia:   Python Data Science Handbook - Jake VanderPlas - Livro com o básico do uso de Python em Data Science, está disponível gratuitamente na página do autor. Começa com uma introdução para a linguagem."/>
+<meta name="twitter:description" content="Material: O material são notebooks jupyter com os códigos e teoria por trás das técnicas.
+ Regressão Linear; SARIMAX; Alisamento exponencial;  Principais ferramentas:  Anaconda - Distribuição Python com as principais bibliotecas incluidas; RStudio - Software para programação em linguagem R, é necessário também instalar a linguagem R.  Bibliografia:   Python Data Science Handbook - Jake VanderPlas - Livro com o básico do uso de Python em Data Science, está disponível gratuitamente na página do autor."/>
 
     <meta property="og:title" content="Data Science" />
-<meta property="og:description" content="Material desenvolvido:  Séries temporais (em desenvolvimento).  Principais ferramentas:  Anaconda - Distribuição Python com as principais bibliotecas incluidas; RStudio - Software para programação em linguagem R, é necessário também instalar a linguagem R.  Bibliografia:   Python Data Science Handbook - Jake VanderPlas - Livro com o básico do uso de Python em Data Science, está disponível gratuitamente na página do autor. Começa com uma introdução para a linguagem." />
+<meta property="og:description" content="Material: O material são notebooks jupyter com os códigos e teoria por trás das técnicas.
+ Regressão Linear; SARIMAX; Alisamento exponencial;  Principais ferramentas:  Anaconda - Distribuição Python com as principais bibliotecas incluidas; RStudio - Software para programação em linguagem R, é necessário também instalar a linguagem R.  Bibliografia:   Python Data Science Handbook - Jake VanderPlas - Livro com o básico do uso de Python em Data Science, está disponível gratuitamente na página do autor." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/disciplinas/datascience/" />
 
@@ -58,7 +60,7 @@
     <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.70.0" />
   </head>
 
   
@@ -108,13 +110,16 @@
       <h1>Data Science</h1>
     </header>
 
-    <h3 id="material-desenvolvido">Material desenvolvido:</h3>
+    <h3 id="material">Material:</h3>
+<p>O material são notebooks jupyter com os códigos e teoria por trás das técnicas.</p>
 <ol>
-<li>Séries temporais (em desenvolvimento).</li>
+<li><a href="https://github.com/ricardozago/Notebooks-Jupyter/blob/master/Regress%C3%A3o%20Linear.ipynb">Regressão Linear</a>;</li>
+<li>SARIMAX;</li>
+<li>Alisamento exponencial;</li>
 </ol>
 <h3 id="principais-ferramentas">Principais ferramentas:</h3>
 <ul>
-<li><a href="https://www.anaconda.com/distribution/">Anaconda</a> - Distribuição Python com as principais bibliotecas incluidas;</li>
+<li><a href="https://www.anaconda.com/products/individual">Anaconda</a> - Distribuição Python com as principais bibliotecas incluidas;</li>
 <li><a href="https://www.rstudio.com/">RStudio</a> - Software para programação em linguagem R, é necessário também instalar a <a href="https://www.r-project.org/">linguagem R</a>.</li>
 </ul>
 <h3 id="bibliografia">Bibliografia:</h3>
@@ -124,6 +129,9 @@
 </li>
 <li>
 <p><a href="https://www.amazon.com.br/Deep-Learning-Python-Francois-Chollet/dp/1617294438">Deep Learning with Python - Francois Chollet</a> - Livro prático, bem mãos na massa, de Deep Learning, escrito pelo criador da biblioteca Keras, que facilita a implementação de modelos. Os notebooks disponíveis no <a href="https://github.com/fchollet/deep-learning-with-python-notebooks">Github do autor</a> são um show a parte, implementando os ensinamentos do livro com explicações, ou seja, apenas com o notebook já é possível entender os conceitos e aplicações.</p>
+</li>
+<li>
+<p><a href="https://www.amazon.com/Guide-Econometrics-6th-Peter-Kennedy/dp/1405182571">A Guide to Econometrics - Peter Kennedy</a> - Livro de econometria, com teoria dos métodos clássicos e os seus fundamentos. Não é essencial para ciência de dados, mas para quem pretende trabalhar com métodos clássicos como ARIMA, é uma bibliografia recomendada.</p>
 </li>
 </ul>
 <h3 id="sites-recomendados">Sites recomendados:</h3>
@@ -141,13 +149,33 @@
 <p><a href="https://www.datasciencecentral.com/">Data Science Central</a> - Outro ótimo site de Data Science;</p>
 </li>
 <li>
-<p><a href="https://datahackers.com.br/">DataHackers</a> - Comunidade Brasileira de Data Science, recomendo o <a href="https://datahackers.com.br/podcast">Podcast</a> deles.</p>
+<p><a href="https://datahackers.com.br/">DataHackers</a> - Comunidade Brasileira de Data Science, recomendo o <a href="https://datahackers.com.br/podcast">Podcast</a> deles;</p>
+</li>
+<li>
+<p><a href="https://www.reddit.com/r/MachineLearning/">Reddit Machine Learning</a> - Comunidade no Reddit sobre o tema.</p>
 </li>
 </ul>
 
   </article>
 </section>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
 
       </div>
 
