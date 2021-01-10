@@ -4,36 +4,41 @@
   
   <url>
     <loc>/categories/blog/</loc>
-    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/data-science/</loc>
-    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/equa%C3%A7%C3%A3o-arimax/</loc>
-    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
+    <loc>/posts/fitando-regress%C3%B5es-n%C3%A3o-lineares/</loc>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/equa%C3%A7%C3%A3o-arimax/</loc>
     <lastmod>2020-02-15T00:00:00+00:00</lastmod>
   </url>
   

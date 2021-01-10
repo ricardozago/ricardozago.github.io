@@ -13,7 +13,7 @@
       
       <guid>/disciplinas/datascience/</guid>
       <description>Material: O material são notebooks jupyter com os códigos e teoria por trás das técnicas.
- Regressão Linear; SARIMAX; Alisamento exponencial;  Principais ferramentas:  Anaconda - Distribuição Python com as principais bibliotecas incluidas; RStudio - Software para programação em linguagem R, é necessário também instalar a linguagem R.  Bibliografia:   Python Data Science Handbook - Jake VanderPlas - Livro com o básico do uso de Python em Data Science, está disponível gratuitamente na página do autor.</description>
+ Regressão Linear; Regressão não linear, no exemplo assintótica; SARIMAX; Alisamento exponencial;  Principais ferramentas:  Anaconda - Distribuição Python com as principais bibliotecas incluidas; RStudio - Software para programação em linguagem R, é necessário também instalar a linguagem R.  Bibliografia:   Python Data Science Handbook - Jake VanderPlas - Livro com o básico do uso de Python em Data Science, está disponível gratuitamente na página do autor.</description>
     </item>
     
     <item>
