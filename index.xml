@@ -23,7 +23,7 @@ Podem existir algumas relações que realizar estas transformações pode não s
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/posts/equa%C3%A7%C3%A3o-arimax/</guid>
-      <description>Series temporais são uma sequência de valores com uma marcação de data e/ou hora, um datastamp, alguns autores colocam a necessidade de serem igualmente espaçados, o que facilita o seu uso. Exemplos de séries temporais são a cotação do dólar, quantidade de chuva em uma cidade, total de vendas de um produto, etc. Elas são utilizadas nas mais diversas áreas, desde previsão de atendimentos em um hospital a demanda de um bem para alocação de produção.</description>
+      <description>Séries temporais são uma sequência de valores com uma marcação de data e/ou hora, um datastamp, alguns autores colocam a necessidade de serem igualmente espaçados, o que facilita o seu uso. Exemplos de séries temporais são a cotação do dólar, quantidade de chuva em uma cidade, total de vendas de um produto, etc. Elas são utilizadas nas mais diversas áreas, desde previsão de atendimentos em um hospital a demanda de um bem para alocação de produção.</description>
     </item>
     
     <item>
@@ -80,10 +80,10 @@ Tenho interesses em ciência de dados, análise de séries temporais, sistemas e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/disciplinas/datascience/</guid>
-      <description>Material: O material são notebooks jupyter com os códigos e teoria por trás das técnicas.
+      <description>Material:    O material são notebooks jupyter com os códigos e teoria por trás das técnicas.
   Regressão:
  Regressão Linear; Regressão não linear, no exemplo assintótica;    Séries temporais:
- SARIMAX; Alisamento exponencial;    Principais ferramentas:  Anaconda - Distribuição Python com as principais bibliotecas incluidas; RStudio - Software para programação em linguagem R, é necessário também instalar a linguagem R.  Bibliografia:   Python Data Science Handbook - Jake VanderPlas - Livro com o básico do uso de Python em Data Science, está disponível gratuitamente na página do autor.</description>
+ SARIMAX; Alisamento exponencial;    Principais ferramentas:     Anaconda - Distribuição Python com as principais bibliotecas incluidas; RStudio - Software para programação em linguagem R, é necessário também instalar a linguagem R.</description>
     </item>
     
     <item>
@@ -92,8 +92,8 @@ Tenho interesses em ciência de dados, análise de séries temporais, sistemas e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/disciplinas/embarcados/</guid>
-      <description>Sistemas Embarcados Cada vez mais convivemos com sistemas embarcados e nem percebemos. Seu uso se tornou ubíquo. Além disso, surgiram ferramentas de baixo custo e fácil uso para o seu desenvolvimento. Seja em hardware com o Arduino e módulos ESP, quanto em software, que atualmente são abundantes.
-Aulas:  Em desenvolvimento.  Bibliografia:  John Catsoulis - Designing Embedded Hardware, 2nd Edition - Create New Computers and Devices - O&amp;rsquo;Reilly Media - 2009 - Site; Michael Barr and Anthony Massa - Programming Embedded Systems, 2nd Edition - With C and GNU Development Tools - 2009 - Site; Lee and Seshia - Introduction to Embedded Systems - A Cyber-Physical Systems Approach - Second Edition - MIT Press - 2017 - Disponível para download no site dos autores.</description>
+      <description>Sistemas Embarcados    Cada vez mais convivemos com sistemas embarcados e nem percebemos. Seu uso se tornou ubíquo. Além disso, surgiram ferramentas de baixo custo e fácil uso para o seu desenvolvimento. Seja em hardware com o Arduino e módulos ESP, quanto em software, que atualmente são abundantes.
+Aulas:     Em desenvolvimento.  Bibliografia:     John Catsoulis - Designing Embedded Hardware, 2nd Edition - Create New Computers and Devices - O&amp;rsquo;Reilly Media - 2009 - Site; Michael Barr and Anthony Massa - Programming Embedded Systems, 2nd Edition - With C and GNU Development Tools - 2009 - Site; Lee and Seshia - Introduction to Embedded Systems - A Cyber-Physical Systems Approach - Second Edition - MIT Press - 2017 - Disponível para download no site dos autores.</description>
     </item>
     
     <item>

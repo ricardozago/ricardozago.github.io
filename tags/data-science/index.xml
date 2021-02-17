@@ -23,7 +23,7 @@ Podem existir algumas relações que realizar estas transformações pode não s
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/posts/equa%C3%A7%C3%A3o-arimax/</guid>
-      <description>Series temporais são uma sequência de valores com uma marcação de data e/ou hora, um datastamp, alguns autores colocam a necessidade de serem igualmente espaçados, o que facilita o seu uso. Exemplos de séries temporais são a cotação do dólar, quantidade de chuva em uma cidade, total de vendas de um produto, etc. Elas são utilizadas nas mais diversas áreas, desde previsão de atendimentos em um hospital a demanda de um bem para alocação de produção.</description>
+      <description>Séries temporais são uma sequência de valores com uma marcação de data e/ou hora, um datastamp, alguns autores colocam a necessidade de serem igualmente espaçados, o que facilita o seu uso. Exemplos de séries temporais são a cotação do dólar, quantidade de chuva em uma cidade, total de vendas de um produto, etc. Elas são utilizadas nas mais diversas áreas, desde previsão de atendimentos em um hospital a demanda de um bem para alocação de produção.</description>
     </item>
     
   </channel>
