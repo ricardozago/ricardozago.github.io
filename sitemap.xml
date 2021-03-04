@@ -1,108 +1,64 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/categories/blog/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/data-science/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/fitando-regress%C3%B5es-n%C3%A3o-lineares/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/equa%C3%A7%C3%A3o-arimax/</loc>
     <lastmod>2020-02-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/livro-o-gene-uma-hist%C3%B3ria-%C3%ADntima-siddhartha-mukherjee/</loc>
     <lastmod>2019-03-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/livros/</loc>
     <lastmod>2019-03-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/machine-learning/</loc>
     <lastmod>2019-01-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/placas-de-acelera%C3%A7%C3%A3o-para-machine-learning/</loc>
     <lastmod>2019-01-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/embedded/</loc>
     <lastmod>2017-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/trazendo-um-roteador-tp-link-tl-wr541g-de-volta-a-vida-s%C3%B3-semi-brickado/</loc>
     <lastmod>2017-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/tipos-de-vari%C3%A1veis-inteiras-em-linguagem-c-novos-tipos-em-c99-e-diretrizes-misra/</loc>
     <lastmod>2017-10-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/about/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/disciplinas/datascience/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/disciplinas/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/disciplinas/embarcados/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/disciplinas/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/lectures/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publicacoes/</loc>
   </url>
-  
 </urlset>
