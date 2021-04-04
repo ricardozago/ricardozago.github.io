@@ -8,6 +8,16 @@
     <language>pt-br</language>
     <lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Exemplos SAS</title>
+      <link>/posts/exemplos-sas/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/exemplos-sas/</guid>
+      <description>O SAS é uma importante ferramenta de análise de dados muito utilizada no mundo empresarial. Seu uso no ambiente doméstico não é tão trivial quanto o Python ou R, que além de gratuitos estão a um download de distância.
+No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de SAS University Edition, essa versão brevemente será substituída pelo SAS OnDemand for Academics. Essas versões podem ser a porta de entrada se você quer aprender a linguagem.</description>
+    </item>
+    
+    <item>
       <title>Fitando Regressões Não Lineares</title>
       <link>/posts/fitando-regress%C3%B5es-n%C3%A3o-lineares/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
@@ -83,7 +93,8 @@ Tenho interesses em ciência de dados, análise de séries temporais, sistemas e
       <description>Material:    O material são notebooks jupyter com os códigos e teoria por trás das técnicas.
   Regressão:
  Regressão Linear; Regressão não linear, no exemplo assintótica;    Séries temporais:
- SARIMAX; Alisamento exponencial;    Principais ferramentas:     Anaconda - Distribuição Python com as principais bibliotecas incluidas; RStudio - Software para programação em linguagem R, é necessário também instalar a linguagem R.</description>
+ SARIMAX; Alisamento exponencial;    SAS:
+ Exemplos códigos de SAS.    Principais ferramentas:     Anaconda - Distribuição Python com as principais bibliotecas incluidas; RStudio - Software para programação em linguagem R, é necessário também instalar a linguagem R.</description>
     </item>
     
     <item>
