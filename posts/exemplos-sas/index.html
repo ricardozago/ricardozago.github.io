@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light dark">
+<head>
+  <title>
+  Exemplos SAS · Ricardo Zago
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 
-    
-      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
 
-    
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
 
-    <meta name="author" content="Ricardo Zago">
-    <meta name="description" content="O SAS é uma importante ferramenta de análise de dados muito utilizada no mundo empresarial. Seu uso no ambiente doméstico não é tão trivial quanto o Python ou R, que além de gratuitos estão a um download de distância.
+
+
+
+<meta name="author" content="Ricardo Zago">
+<meta name="description" content="O SAS é uma importante ferramenta de análise de dados muito utilizada no mundo empresarial. Seu uso no ambiente doméstico não é tão trivial quanto o Python ou R, que além de gratuitos estão a um download de distância.
 No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de SAS University Edition, essa versão brevemente será substituída pelo SAS OnDemand for Academics. Essas versões podem ser a porta de entrada se você quer aprender a linguagem.">
-    <meta name="keywords" content="blog,desenvolvedor,pessoal">
+<meta name="keywords" content="blog,desenvolvedor,pessoal">
 
-    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Exemplos SAS"/>
 <meta name="twitter:description" content="O SAS é uma importante ferramenta de análise de dados muito utilizada no mundo empresarial. Seu uso no ambiente doméstico não é tão trivial quanto o Python ou R, que além de gratuitos estão a um download de distância.
 No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de SAS University Edition, essa versão brevemente será substituída pelo SAS OnDemand for Academics. Essas versões podem ser a porta de entrada se você quer aprender a linguagem."/>
 
-    <meta property="og:title" content="Exemplos SAS" />
+<meta property="og:title" content="Exemplos SAS" />
 <meta property="og:description" content="O SAS é uma importante ferramenta de análise de dados muito utilizada no mundo empresarial. Seu uso no ambiente doméstico não é tão trivial quanto o Python ou R, que além de gratuitos estão a um download de distância.
 No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de SAS University Edition, essa versão brevemente será substituída pelo SAS OnDemand for Academics. Essas versões podem ser a porta de entrada se você quer aprender a linguagem." />
 <meta property="og:type" content="article" />
@@ -31,46 +35,56 @@ No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de SA
 
 
 
-    <title>
-  Exemplos SAS · Ricardo Zago
-</title>
 
-    
-      <link rel="canonical" href="https://ricardozago.github.io/posts/exemplos-sas/">
-    
+<link rel="canonical" href="https://ricardozago.github.io/posts/exemplos-sas/">
 
-    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
-    
-      
-      
-      <link rel="stylesheet" href="/css/coder.min.ad336a7323b24e034605f08085c37a5e0292d566dc9936c059f20e18af034b3d.css" integrity="sha256-rTNqcyOyTgNGBfCAhcN6XgKS1WbcmTbAWfIOGK8DSz0=" crossorigin="anonymous" media="screen" />
-    
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
-    
-
-    
-
-    
-
-    
-
-    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-
-    <meta name="generator" content="Hugo 0.105.0">
-  </head>
 
   
   
-  <body class="preload-transitions colorscheme-light">
-    
+  <link rel="stylesheet" href="/css/coder.min.b017b487ed1858e861ecee312fa00c7f1833904e83cd05ffd56a033dd66c5e46.css" integrity="sha256-sBe0h&#43;0YWOhh7O4xL6AMfxgzkE6DzQX/1WoDPdZsXkY=" crossorigin="anonymous" media="screen" />
 
-    <main class="wrapper">
-      <nav class="navigation">
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+
+  <main class="wrapper">
+    <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="/">
       Ricardo Zago
@@ -107,8 +121,8 @@ No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de SA
 </nav>
 
 
-      <div class="content">
-        
+    <div class="content">
+      
   <section class="container post">
     <article>
       <header>
@@ -146,13 +160,13 @@ No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de SA
         </div>
       </header>
 
-      <div>
+      <div class="post-content">
         
         <p>O SAS é uma importante ferramenta de análise de dados muito utilizada no mundo empresarial. Seu uso no ambiente doméstico não é tão trivial quanto o Python ou R, que além de gratuitos estão a um download de distância.</p>
-<p>No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de <a href="https://www.sas.com/pt_br/software/university-edition.html">SAS University Edition</a>, essa versão brevemente será substituída pelo <a href="https://www.sas.com/pt_br/software/on-demand-for-academics/references/getting-started-with-sas-ondemand-for-academics-studio.html">SAS OnDemand for Academics</a>. Essas versões podem ser a porta de entrada se você quer aprender a linguagem.</p>
+<p>No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de <a href="https://www.sas.com/pt_br/software/university-edition.html"  class="external-link" target="_blank" rel="noopener">SAS University Edition</a>, essa versão brevemente será substituída pelo <a href="https://www.sas.com/pt_br/software/on-demand-for-academics/references/getting-started-with-sas-ondemand-for-academics-studio.html"  class="external-link" target="_blank" rel="noopener">SAS OnDemand for Academics</a>. Essas versões podem ser a porta de entrada se você quer aprender a linguagem.</p>
 <p>Escrevi 5 códigos que fazem alguns tratamentos comuns de dados, utilizando os famosos datasets Airpassagers e Iris. A ideia não é dar um curso de SAS, mas sim servir como uma referência para quem já tem alguma noção da linguagem ou ao menos entende de SQL e precisa fazer alguma coisa básica em SAS (ou nem tão básica, já que entramos em Macros).</p>
 <ul>
-<li><a href="https://github.com/ricardozago/sas_simple_examples/blob/main/Exemplo_1_ARIMA.sas">Exemplo 1: ARIMA</a>:
+<li><a href="https://github.com/ricardozago/sas_simple_examples/blob/main/Exemplo_1_ARIMA.sas"  class="external-link" target="_blank" rel="noopener">Exemplo 1: ARIMA</a>:
 <ul>
 <li>Renomeamos colunas em um dataset;</li>
 <li>Ordenamos um dataset (PROC SORT);</li>
@@ -163,7 +177,7 @@ No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de SA
 <li>Cruzamento de bases com DATA STEP (PROC MERGE);</li>
 </ul>
 </li>
-<li><a href="https://github.com/ricardozago/sas_simple_examples/blob/main/Exemplo_2_IRIS.sas">Exemplo 2: IRIS</a>:
+<li><a href="https://github.com/ricardozago/sas_simple_examples/blob/main/Exemplo_2_IRIS.sas"  class="external-link" target="_blank" rel="noopener">Exemplo 2: IRIS</a>:
 <ul>
 <li>Importamos um CSV (PROC IMPORT);</li>
 <li>Verificamos as colunas e tipos da base (PROC CONTENTS);</li>
@@ -179,7 +193,7 @@ No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de SA
 <li>Modelo de árvore (PROC HPSPLIT);</li>
 </ul>
 </li>
-<li><a href="https://github.com/ricardozago/sas_simple_examples/blob/main/Exemplo_3_DATAS.sas">Exemplo 3: Datas</a>:
+<li><a href="https://github.com/ricardozago/sas_simple_examples/blob/main/Exemplo_3_DATAS.sas"  class="external-link" target="_blank" rel="noopener">Exemplo 3: Datas</a>:
 <ul>
 <li>Criamos um dataset com dados escritos no próprio DATA utilizando o parâmetro &ldquo;infile&rdquo;;</li>
 <li>Mostramos como as datas são armazenadas no SAS;</li>
@@ -190,7 +204,7 @@ No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de SA
 <li>Deixamos em maiúsculo ou minúsculo o texto;</li>
 </ul>
 </li>
-<li><a href="https://github.com/ricardozago/sas_simple_examples/blob/main/Exemplo_4_MACROS.sas">Exemplo 4: Macros</a>:
+<li><a href="https://github.com/ricardozago/sas_simple_examples/blob/main/Exemplo_4_MACROS.sas"  class="external-link" target="_blank" rel="noopener">Exemplo 4: Macros</a>:
 <ul>
 <li>Definição de macro variáveis;</li>
 <li>&ldquo;Print&rdquo; de texto no &ldquo;console&rdquo;;</li>
@@ -202,7 +216,7 @@ No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de SA
 <li>Truques para macros;</li>
 </ul>
 </li>
-<li><a href="https://github.com/ricardozago/sas_simple_examples/blob/main/Exemplo_5_Plots.sas">Exemplo 5: Gráficos</a>:
+<li><a href="https://github.com/ricardozago/sas_simple_examples/blob/main/Exemplo_5_Plots.sas"  class="external-link" target="_blank" rel="noopener">Exemplo 5: Gráficos</a>:
 <ul>
 <li>Plota gráfico de série temporal (PROC SGPLOT);</li>
 <li>Esboça scatter plot com dataset Iris (PROC SGPLOT).</li>
@@ -220,16 +234,17 @@ No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de SA
         
         
         
+        
       </footer>
     </article>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
-    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
   
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
-    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
-    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
     onload="renderMathInElement(document.body,
       {
         delimiters: [
@@ -242,43 +257,60 @@ No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de SA
     );"></script>
   </section>
 
-      </div>
+    </div>
 
-      <footer class="footer">
+    <footer class="footer">
   <section class="container">
     ©
     
-    2022
+    2023
      Ricardo Zago 
     ·
     
-    Promovido por <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    Promovido por <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
     
   </section>
 </footer>
 
-    </main>
+  </main>
 
-    
-      
-      <script src="/js/coder.min.9cf2dbf9b6989ef8eae941ffb4231c26d1dc026bca38f1d19fdba50177d8a9ac.js" integrity="sha256-nPLb&#43;baYnvjq6UH/tCMcJtHcAmvKOPHRn9ulAXfYqaw="></script>
-    
+  
 
-    
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
 
-    
+  
 
-    
+  
 
-    
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
-  </body>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
 
 </html>
