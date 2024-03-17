@@ -5,28 +5,21 @@
     <link>https://ricardozago.github.io/disciplinas/</link>
     <description>Recent content in Disciplinas on Ricardo Zago</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language><atom:link href="https://ricardozago.github.io/disciplinas/index.xml" rel="self" type="application/rss+xml" />
+    <language>pt-br</language>
+    <atom:link href="https://ricardozago.github.io/disciplinas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Embarcados</title>
       <link>https://ricardozago.github.io/disciplinas/embarcados/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ricardozago.github.io/disciplinas/embarcados/</guid>
-      <description>Sistemas Embarcados Link para o cabeçalho Cada vez mais convivemos com sistemas embarcados e nem percebemos. Seu uso se tornou ubíquo. Além disso, surgiram ferramentas de baixo custo e fácil uso para o seu desenvolvimento. Seja em hardware com o Arduino e módulos ESP, quanto em software, que atualmente são abundantes.
-Aulas: Link para o cabeçalho Em desenvolvimento. Bibliografia: Link para o cabeçalho John Catsoulis - Designing Embedded Hardware, 2nd Edition - Create New Computers and Devices - O&amp;rsquo;Reilly Media - 2009 - Site; Michael Barr and Anthony Massa - Programming Embedded Systems, 2nd Edition - With C and GNU Development Tools - 2009 - Site; Lee and Seshia - Introduction to Embedded Systems - A Cyber-Physical Systems Approach - Second Edition - MIT Press - 2017 - Disponível para download no site dos autores.</description>
+      <description>Sistemas Embarcados Link para o cabeçalho Cada vez mais convivemos com sistemas embarcados e nem percebemos. Seu uso se tornou ubíquo. Além disso, surgiram ferramentas de baixo custo e fácil uso para o seu desenvolvimento. Seja em hardware com o Arduino e módulos ESP, quanto em software, que atualmente são abundantes.&#xA;Aulas: Link para o cabeçalho Em desenvolvimento. Bibliografia: Link para o cabeçalho John Catsoulis - Designing Embedded Hardware, 2nd Edition - Create New Computers and Devices - O&amp;rsquo;Reilly Media - 2009 - Site; Michael Barr and Anthony Massa - Programming Embedded Systems, 2nd Edition - With C and GNU Development Tools - 2009 - Site; Lee and Seshia - Introduction to Embedded Systems - A Cyber-Physical Systems Approach - Second Edition - MIT Press - 2017 - Disponível para download no site dos autores.</description>
     </item>
-    
     <item>
       <title>Lectures</title>
       <link>https://ricardozago.github.io/disciplinas/datascience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ricardozago.github.io/disciplinas/datascience/</guid>
-      <description>A seguir apresento alguns materiais escritos ao longo do tempo, seja para alguma apresentação pontual ou mesmo a tentativa de gerar conteúdo relevante relacionado a Ciência de Dados.
-Imagem do mapa da Unicamp criada com o projeto Pretty Maps.
-Alguns exemplos de técnicas: Link para o cabeçalho Regressão:
-Regressão Linear. É uma técnica muito importante, mas que a maioria dos profissionais do mercado não presta muita atenção por acreditarem ser muito básica.</description>
+      <description>A seguir apresento alguns materiais escritos ao longo do tempo, seja para alguma apresentação pontual ou mesmo a tentativa de gerar conteúdo relevante relacionado a Ciência de Dados.&#xA;Imagem do mapa da Unicamp criada com o projeto Pretty Maps.&#xA;Alguns exemplos de técnicas: Link para o cabeçalho Regressão:&#xA;Regressão Linear. É uma técnica muito importante, mas que a maioria dos profissionais do mercado não presta muita atenção por acreditarem ser muito básica.</description>
     </item>
-    
   </channel>
 </rss>

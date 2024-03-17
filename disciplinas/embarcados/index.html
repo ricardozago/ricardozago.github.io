@@ -10,7 +10,7 @@
 <meta name="color-scheme" content="light dark">
 
 
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; connect-src 'self' https://www.google-analytics.com;">
 
 
 
@@ -20,8 +20,7 @@
 Aulas: Link para o cabeçalho Em desenvolvimento. Bibliografia: Link para o cabeçalho John Catsoulis - Designing Embedded Hardware, 2nd Edition - Create New Computers and Devices - O&rsquo;Reilly Media - 2009 - Site; Michael Barr and Anthony Massa - Programming Embedded Systems, 2nd Edition - With C and GNU Development Tools - 2009 - Site; Lee and Seshia - Introduction to Embedded Systems - A Cyber-Physical Systems Approach - Second Edition - MIT Press - 2017 - Disponível para download no site dos autores.">
 <meta name="keywords" content="blog,desenvolvedor,pessoal">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Embarcados"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Embarcados"/>
 <meta name="twitter:description" content="Sistemas Embarcados Link para o cabeçalho Cada vez mais convivemos com sistemas embarcados e nem percebemos. Seu uso se tornou ubíquo. Além disso, surgiram ferramentas de baixo custo e fácil uso para o seu desenvolvimento. Seja em hardware com o Arduino e módulos ESP, quanto em software, que atualmente são abundantes.
 Aulas: Link para o cabeçalho Em desenvolvimento. Bibliografia: Link para o cabeçalho John Catsoulis - Designing Embedded Hardware, 2nd Edition - Create New Computers and Devices - O&rsquo;Reilly Media - 2009 - Site; Michael Barr and Anthony Massa - Programming Embedded Systems, 2nd Edition - With C and GNU Development Tools - 2009 - Site; Lee and Seshia - Introduction to Embedded Systems - A Cyber-Physical Systems Approach - Second Edition - MIT Press - 2017 - Disponível para download no site dos autores."/>
 
@@ -31,7 +30,7 @@ Aulas: Link para o cabeçalho Em desenvolvimento. Bibliografia: Link para o cabe
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ricardozago.github.io/disciplinas/embarcados/" /><meta property="article:section" content="disciplinas" />
 
-<meta property="og:site_name" content="Ricardo Zago" />
+
 
 
 
@@ -39,12 +38,14 @@ Aulas: Link para o cabeçalho Em desenvolvimento. Bibliografia: Link para o cabe
 <link rel="canonical" href="https://ricardozago.github.io/disciplinas/embarcados/">
 
 
-<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
 
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.b017b487ed1858e861ecee312fa00c7f1833904e83cd05ffd56a033dd66c5e46.css" integrity="sha256-sBe0h&#43;0YWOhh7O4xL6AMfxgzkE6DzQX/1WoDPdZsXkY=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.min.041e434b8e8c6d51873684f84898d0a25655f6b41547cc62b7bd3ab0b135426a.css" integrity="sha256-BB5DS46MbVGHNoT4SJjQolZV9rQVR8xit706sLE1Qmo=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -58,6 +59,7 @@ Aulas: Link para o cabeçalho Em desenvolvimento. Bibliografia: Link para o cabe
 
 
 
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
 <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
 
@@ -86,31 +88,33 @@ Aulas: Link para o cabeçalho Em desenvolvimento. Bibliografia: Link para o cabe
   <main class="wrapper">
     <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="/">
+    
+    <a class="navigation-title" href="https://ricardozago.github.io/">
       Ricardo Zago
     </a>
     
+    
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
       </label>
       <ul class="navigation-list">
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/posts/">Blog</a>
+              <a class="navigation-link " href="/posts/">Blog</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/disciplinas/datascience/">Lectures</a>
+              <a class="navigation-link " href="/disciplinas/datascience/">Lectures</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/publicacoes/">Publications</a>
+              <a class="navigation-link " href="/publicacoes/">Publications</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/about/">About</a>
+              <a class="navigation-link " href="/about/">About</a>
             </li>
           
         
@@ -136,16 +140,16 @@ Aulas: Link para o cabeçalho Em desenvolvimento. Bibliografia: Link para o cabe
     <h1 id="sistemas-embarcados">
   Sistemas Embarcados
   <a class="heading-link" href="#sistemas-embarcados">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h1>
 <p>Cada vez mais convivemos com sistemas embarcados e nem percebemos. Seu uso se tornou ubíquo. Além disso, surgiram ferramentas de baixo custo e fácil uso para o seu desenvolvimento. Seja em hardware com o Arduino e módulos ESP, quanto em software, que atualmente são abundantes.</p>
-<p><img src="/disciplinas/embarcados/embarcados.jpg" alt="Kicad"></p>
+<p><img alt="Kicad" src="/disciplinas/embarcados/embarcados.jpg"></p>
 <h3 id="aulas">
   Aulas:
   <a class="heading-link" href="#aulas">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h3>
@@ -155,7 +159,7 @@ Aulas: Link para o cabeçalho Em desenvolvimento. Bibliografia: Link para o cabe
 <h3 id="bibliografia">
   Bibliografia:
   <a class="heading-link" href="#bibliografia">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h3>
@@ -167,7 +171,7 @@ Aulas: Link para o cabeçalho Em desenvolvimento. Bibliografia: Link para o cabe
 <h3 id="softwares">
   Softwares:
   <a class="heading-link" href="#softwares">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h3>
@@ -181,7 +185,7 @@ Aulas: Link para o cabeçalho Em desenvolvimento. Bibliografia: Link para o cabe
 <h3 id="sites">
   Sites:
   <a class="heading-link" href="#sites">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h3>
@@ -196,7 +200,7 @@ Aulas: Link para o cabeçalho Em desenvolvimento. Bibliografia: Link para o cabe
 <h3 id="compra-e-fabricação-de-hardware">
   Compra e fabricação de hardware:
   <a class="heading-link" href="#compra-e-fabrica%c3%a7%c3%a3o-de-hardware">
-    <i class="fa fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
     <span class="sr-only">Link para o cabeçalho</span>
   </a>
 </h3>
@@ -231,7 +235,7 @@ Aulas: Link para o cabeçalho Em desenvolvimento. Bibliografia: Link para o cabe
   <section class="container">
     ©
     
-    2023
+    2024
      Ricardo Zago 
     ·
     
@@ -253,6 +257,10 @@ Aulas: Link para o cabeçalho Em desenvolvimento. Bibliografia: Link para o cabe
 
   
 
+
+  
+
+  
 
   
 
