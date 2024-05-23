@@ -4,10 +4,17 @@
     <title>Ricardo Zago</title>
     <link>https://ricardozago.github.io/</link>
     <description>Recent content on Ricardo Zago</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 04 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://ricardozago.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Extração de texto de documentos - Layer de Texto e OCR</title>
+      <link>https://ricardozago.github.io/posts/extra%C3%A7%C3%A3o-de-texto-de-documentos/</link>
+      <pubDate>Sun, 17 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://ricardozago.github.io/posts/extra%C3%A7%C3%A3o-de-texto-de-documentos/</guid>
+      <description>Os arquivos PDF se tornaram um padrão amplamente adotado para compartilhar documentos de forma segura e confiável. No dia-a-dia eles são usados para visualizar e distribuir documentos, como livros, apostilas, manuais, contratos, preservando o layout original. Além disso, permitem a adição de assinaturas digitais, tornando-os ideais para transações legais e financeiras. Ainda mais agora com a Assinatura Eletrônica do portal gov.br, que permite a assinatura de contratos com a mesma validade de cartórios utilizando arquivos PDF.</description>
+    </item>
     <item>
       <title>Exemplos SAS</title>
       <link>https://ricardozago.github.io/posts/exemplos-sas/</link>
@@ -51,6 +58,13 @@
       <description> Sou Brasileiro, marido, nerd, Graduado e Mestre em Engenharia Elétrica pela Unicamp, especialista em Data Science pelo ITA.&#xA;Tenho interesses em:&#xA;Ciencia de Dados; Séries temporais; Generative AI, NLP e afins; Problemas legais :). </description>
     </item>
     <item>
+      <title>BERTugues</title>
+      <link>https://ricardozago.github.io/bertugues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ricardozago.github.io/bertugues/</guid>
+      <description>O BERTugues é um modelo de embedding de texto para o português Brasileiro treinato com dados exclusivamente em português.&#xA;Use o BERTugues! Acesse pelo Hugging Face!&#xA;O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BERT, com os objetivos de Masked Language Modeling (MLM) e Next Sentence Prediction (NSP), com 1 milhão de steps, usando mais de 20 GB de textos. Como o Bertimbau, foi pré-treinado com o dataset BrWAC e a Wikipédia em português para o Tokenizador, contando com algumas melhorias no fluxo de treinamento, como:</description>
+    </item>
+    <item>
       <title>Embarcados</title>
       <link>https://ricardozago.github.io/disciplinas/embarcados/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -76,7 +90,7 @@
       <link>https://ricardozago.github.io/publicacoes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ricardozago.github.io/publicacoes/</guid>
-      <description>2020&#xA;Luciane A. S. Pedotti, Ricardo M. Zago, Jefferson Cutrim Rocha, José Gilberto Dalfré Filho, Mateus Giesbrecht, Fabiano Fruett - Failure analysis on a water pump based on a low-cost MEMS accelerometer and machine learning classifiers - Semina: Ciências Exatas e Tecnológicas (Volume: 41, Número: 2, Dezembro 2020) - DOI: 10.5433/1679-0375.2020v41n2p171&#xA;Luciane A. S. Pedotti, Ricardo M. Zago, Mateus Giesbrecht, Fabiano Fruett - Low-cost MEMS accelerometer network for rotating machine vibration diagnostics - IEEE Instrumentation &amp;amp; Measurement Magazine (Volume: 23, Issue: 7, October 2020) - DOI: 10.</description>
+      <description>2022&#xA;Ricardo M. Zago - Modelos utilizados para processamento de linguagem natural - Medium de Dados do Itaú 2020&#xA;Luciane A. S. Pedotti, Ricardo M. Zago, Jefferson Cutrim Rocha, José Gilberto Dalfré Filho, Mateus Giesbrecht, Fabiano Fruett - Failure analysis on a water pump based on a low-cost MEMS accelerometer and machine learning classifiers - Semina: Ciências Exatas e Tecnológicas (Volume: 41, Número: 2, Dezembro 2020) - DOI: 10.5433/1679-0375.2020v41n2p171&#xA;Luciane A.</description>
     </item>
   </channel>
 </rss>

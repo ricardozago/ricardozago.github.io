@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>
+  Extração de texto de documentos - Layer de Texto e OCR · Ricardo Zago
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; connect-src 'self' https://www.google-analytics.com;">
+
+
+
+
+<meta name="author" content="Ricardo Zago">
+<meta name="description" content="Os arquivos PDF se tornaram um padrão amplamente adotado para compartilhar documentos de forma segura e confiável. No dia-a-dia eles são usados para visualizar e distribuir documentos, como livros, apostilas, manuais, contratos, preservando o layout original. Além disso, permitem a adição de assinaturas digitais, tornando-os ideais para transações legais e financeiras. Ainda mais agora com a Assinatura Eletrônica do portal gov.br, que permite a assinatura de contratos com a mesma validade de cartórios utilizando arquivos PDF.">
+<meta name="keywords" content="blog,desenvolvedor,pessoal">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Extração de texto de documentos - Layer de Texto e OCR">
+  <meta name="twitter:description" content="Os arquivos PDF se tornaram um padrão amplamente adotado para compartilhar documentos de forma segura e confiável. No dia-a-dia eles são usados para visualizar e distribuir documentos, como livros, apostilas, manuais, contratos, preservando o layout original. Além disso, permitem a adição de assinaturas digitais, tornando-os ideais para transações legais e financeiras. Ainda mais agora com a Assinatura Eletrônica do portal gov.br, que permite a assinatura de contratos com a mesma validade de cartórios utilizando arquivos PDF.">
+
+<meta property="og:url" content="https://ricardozago.github.io/posts/extra%C3%A7%C3%A3o-de-texto-de-documentos/">
+  <meta property="og:site_name" content="Ricardo Zago">
+  <meta property="og:title" content="Extração de texto de documentos - Layer de Texto e OCR">
+  <meta property="og:description" content="Os arquivos PDF se tornaram um padrão amplamente adotado para compartilhar documentos de forma segura e confiável. No dia-a-dia eles são usados para visualizar e distribuir documentos, como livros, apostilas, manuais, contratos, preservando o layout original. Além disso, permitem a adição de assinaturas digitais, tornando-os ideais para transações legais e financeiras. Ainda mais agora com a Assinatura Eletrônica do portal gov.br, que permite a assinatura de contratos com a mesma validade de cartórios utilizando arquivos PDF.">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-03-17T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-03-17T00:00:00+00:00">
+    <meta property="article:tag" content="Data Science">
+
+
+
+
+<link rel="canonical" href="https://ricardozago.github.io/posts/extra%C3%A7%C3%A3o-de-texto-de-documentos/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.2bcfd595a46ad32fe6fb17c0ba5e8149d30fbd7712a9bacddc960a86a916edb8.css" integrity="sha256-K8/VlaRq0y/m&#43;xfAul6BSdMPvXcSqbrN3JYKhqkW7bg=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://ricardozago.github.io/">
+      Ricardo Zago
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/bertugues/">BERTugues</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/disciplinas/datascience/">Lectures</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/publicacoes/">Publications</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://ricardozago.github.io/posts/extra%C3%A7%C3%A3o-de-texto-de-documentos/">
+              Extração de texto de documentos - Layer de Texto e OCR
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-03-17T00:00:00Z">
+                março 17, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              3 minutos de leitura
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+    <a href="/categories/blog/">Blog</a></div>
+
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/data-science/">Data Science</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>Os arquivos PDF se tornaram um padrão amplamente adotado para compartilhar documentos de forma segura e confiável. No dia-a-dia eles são usados para visualizar e distribuir documentos, como livros, apostilas, manuais, contratos, preservando o layout original. Além disso, permitem a adição de assinaturas digitais, tornando-os ideais para transações legais e financeiras. Ainda mais agora com a <a href="https://www.gov.br/governodigital/pt-br/identidade/assinatura-eletronica"  class="external-link" target="_blank" rel="noopener">Assinatura Eletrônica do portal gov.br</a>, que permite a assinatura de contratos com a mesma validade de cartórios utilizando arquivos PDF.</p>
+<p>No ambiente corporativo, os PDFs desempenham um papel crucial na comunicação. Eles são amplamente utilizados para compartilhar apresentações, relatórios e propostas dentro da empresa ou com clientes e parceiros externos. Na justiça brasileira os processos, com suas petições e despachos são realizados com documentos PDF. Balanços e apresentações de resultados de empresas negociadas na bolsa são disponibilizados neste formato.</p>
+<p>Devido a isso a extração de informações de PDFs é uma tarefa muito comum, que pode automatizar diversos processos, seja no ambito pessoal, como extrair os seus gastos da fatura do cartão de crédito (e posteriormente até mesmo fazer um classificador automatizado das categorias dos gastos, se seu cartão já não faz isso). Quanto no ambito empresarial, investimentos, como fazer a extração das informações dos balanços de empresas.</p>
+<p>Existem uma infinidade de bibliotecas Python que podem ser utilizadas para extração de texto de PDF (ou até mesmo edição/criação de documentos). No momento vamos focar no <a href="https://pypi.org/project/pdfminer.six/"  class="external-link" target="_blank" rel="noopener">pdfminer.six</a> e no <a href="https://pypi.org/project/pytesseract/"  class="external-link" target="_blank" rel="noopener">pytesseract</a>. Existem aplicativos escritos em Python como o <a href="https://github.com/pdfarranger/pdfarranger"  class="external-link" target="_blank" rel="noopener">pdfarranger</a> que permitem manipulações em arquivos PDFs utilizando uma interface gráfica, como adição de páginas, remoções, rotações, reordenação,</p>
+<h2 id="pdfminersix">
+  pdfminer.six
+  <a class="heading-link" href="#pdfminersix">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <span class="sr-only">Link para o cabeçalho</span>
+  </a>
+</h2>
+<p>O pdfminer.six é uma lib para o Python focada em extrair informações do PDF, no momento iremos focar em extrair texto, mas também pode ser utilizada para extrair imagens. Ele extrai texto, documentos que são fotos com texto na foto, não são extraídos pelo pdfminer.six, neste caso vamos utilizar o tesseract.</p>
+<p>O comando para extrair todo o texto do PDF é bem simples:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python3" data-lang="python3"><span style="display:flex;"><span><span style="font-weight:bold">from</span> <span style="font-weight:bold">pdfminer.high_level</span> <span style="font-weight:bold">import</span> extract_text <span style="font-style:italic"># pip install pdfminer.six</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">from</span> <span style="font-weight:bold">func_timeout</span> <span style="font-weight:bold">import</span> func_timeout, FunctionTimedOut <span style="font-style:italic"># pip install func-timeout</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">def</span> text_extract_pdfminer(file, max_pages, n_page_test):
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="font-style:italic"># https://pdfminersix.readthedocs.io/en/latest/reference/highlevel.html#api-extract-text</span>
+</span></span><span style="display:flex;"><span>        text = func_timeout(pdfminer_timeout, <span style="font-weight:bold">lambda</span>: extract_text(file, maxpages = n_page_test))
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">except</span> FunctionTimedOut:
+</span></span><span style="display:flex;"><span>        text = <span style="font-style:italic">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">if</span> len(text) &gt; 300:
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">try</span>:
+</span></span><span style="display:flex;"><span>            text = func_timeout(pdfminer_timeout, <span style="font-weight:bold">lambda</span>: extract_text(file, max_pages))
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">except</span> FunctionTimedOut:
+</span></span><span style="display:flex;"><span>            text = <span style="font-style:italic">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">return</span> text</span></span></code></pre></div>
+<p>A função que realiza a extração é a extract_text. Gostaria de destacar algumas particularidades, dependendo do pdf, o pdfminer.six pode demorar muito tempo na extração, portanto utilizamos o func_timeout para limitar o tempo de execução (possivelmente utilizando um OCR posteriormente). Além disso, um PDF pode necessitar de OCR, pois não tem camada de texto, portanto analisamos as 3 primeiras páginas em busca de texto, caso não seja encontrado uma quantidade significativa de texto, retornamos uma string vazia.</p>
+<h2 id="pytesseract">
+  pytesseract
+  <a class="heading-link" href="#pytesseract">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <span class="sr-only">Link para o cabeçalho</span>
+  </a>
+</h2>
+<p>O Tesseract OCR é uma biblioteca de reconhecimento ótico de caracteres (OCR) de código aberto, originalmente desenvolvida pela HP e atualmente patrocinada pela Google. Ele é capaz de reconhecer texto em diversos idiomas, pode lidar com imagens rotacionadas ou distorcidas, reconhecer vários estilos e formatos de fontes, principalmente impressas.</p>
+<p>Por ser de código aberto, grátis, o Tesseract OCR é amplamente utilizado em projetos que envolvem digitalização de documentos, reconhecimento de texto em imagens. Embora não tenha a mesma precisão que soluções comerciais de OCR, como o Amazon Textract, ou as soluções do Google e Azure.</p>
+<p>Para utiliza no Python existe uma lib que um wrapper</p>
+<div class="notice note">
+  <div class="notice-title">
+    <i class="fa-solid fa-sticky-note" aria-hidden="true"></i>Nota
+  </div>
+  <div class="notice-content">Uma nota aqui.</div>
+</div>
+
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2024
+     Ricardo Zago 
+    ·
+    
+    Promovido por <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
