@@ -18,8 +18,10 @@
 <meta name="author" content="Ricardo Zago">
 <meta name="description" content="O BERTugues é um modelo de embedding de texto para o português Brasileiro treinato com dados exclusivamente em português.
 Use o BERTugues! Acesse pelo Hugging Face!
+
 O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BERT, com os objetivos de Masked Language Modeling (MLM) e Next Sentence Prediction (NSP), com 1 milhão de steps, usando mais de 20 GB de textos. Como o Bertimbau, foi pré-treinado com o dataset BrWAC e a Wikipédia em português para o Tokenizador, contando com algumas melhorias no fluxo de treinamento, como:">
 <meta name="keywords" content="blog,desenvolvedor,pessoal">
+
 
 
   <meta name="twitter:card" content="summary">
@@ -50,7 +52,7 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.2bcfd595a46ad32fe6fb17c0ba5e8149d30fbd7712a9bacddc960a86a916edb8.css" integrity="sha256-K8/VlaRq0y/m&#43;xfAul6BSdMPvXcSqbrN3JYKhqkW7bg=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.min.7763f8bc6341ecf82378e867c285e1549abb063a899be313ccd25dbfcd24fa7d.css" integrity="sha256-d2P4vGNB7PgjeOhnwoXhVJq7BjqJm&#43;MTzNJdv80k&#43;n0=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -107,10 +109,6 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
         
           
             <li class="navigation-item">
-              <a class="navigation-link " href="/posts/">Blog</a>
-            </li>
-          
-            <li class="navigation-item">
               <a class="navigation-link " href="/bertugues/">BERTugues</a>
             </li>
           
@@ -148,7 +146,7 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
 
     <p>O BERTugues é um modelo de embedding de texto para o português Brasileiro treinato com dados exclusivamente em português.</p>
 <p><a href="https://huggingface.co/ricardoz/BERTugues-base-portuguese-cased"  class="external-link" target="_blank" rel="noopener">Use o BERTugues! Acesse pelo Hugging Face!</a></p>
-<p><img alt="huggingface" src="Hugginface.png"></p>
+<p><img src="Hugginface.png" alt="huggingface"></p>
 <p>O BERTugues foi pré-treinado seguindo os mesmos passos do <a href="https://arxiv.org/abs/1810.04805v2"  class="external-link" target="_blank" rel="noopener">paper original do BERT</a>, com os objetivos de Masked Language Modeling (MLM) e Next Sentence Prediction (NSP), com 1 milhão de <em>steps</em>, usando mais de 20 GB de textos. Como o <a href="https://huggingface.co/neuralmind/bert-base-portuguese-cased"  class="external-link" target="_blank" rel="noopener">Bertimbau</a>, foi pré-treinado com o dataset <a href="https://www.inf.ufrgs.br/pln/wiki/index.php?title=BrWaC"  class="external-link" target="_blank" rel="noopener">BrWAC</a> e a Wikipédia em português para o Tokenizador, contando com algumas melhorias no fluxo de treinamento, como:</p>
 <ul>
 <li><strong>Remoção de caracteres pouco comuns no português do treinamento do Tokenizador.</strong> No Bertimbau mais de 7000 dos 29794 usam caracteres orientais ou especiais, quase nunca usados no português. Por exemplo, existem os tokens: &ldquo;##漫&rdquo;, &ldquo;##켝&rdquo;, &ldquo;##前&rdquo;, já no BERTugues fizemos a remoção desses caracteres antes de treinar o tokenizador;</li>
@@ -163,7 +161,7 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
   </a>
 </h2>
 <p>Com a substituição dos Tokens pouco usados no português conseguimos diminuir a quantidade média de palavras que são quebradas em mais de um Token. No teste utilizando o <a href="https://huggingface.co/datasets/assin2"  class="external-link" target="_blank" rel="noopener">assin2</a>, mesmo dataset utilizando pelo Bertimbau para fazer o teste na dissertação de mestrado, diminuímos a quantidade média de palavras quebradas por texto de 3,8 para 3,0, no BERT multilinguagem esse número era 7,4.</p>
-<p><img alt="subtokens" src="subtokens_counts.png"></p>
+<p><img src="subtokens_counts.png" alt="subtokens"></p>
 <h2 id="performance">
   Performance
   <a class="heading-link" href="#performance">
@@ -174,50 +172,50 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
 <p>Para comparar a performance testamos um problema de classificação de textos, utilizando a base de reviews de filmes do <a href="https://www.kaggle.com/datasets/luisfredgs/imdb-ptbr"  class="external-link" target="_blank" rel="noopener">IMDB</a>, que foi traduzida para o português e possui uma boa qualidade. Neste problema utilizamos a representação do BERTugues da frase e passamos ela por um modelo de Random Forest para realizar a classificação.</p>
 <p>Também utilizamos a comparação de performance do paper <a href="https://repositorio.ufms.br/handle/123456789/5119"  class="external-link" target="_blank" rel="noopener">JurisBERT: Transformer-based model for embedding legal texts</a>, que pré-treina um BERT especialmente para textos de um domínio, usando o BERT multilinguagem e o Bertimbau como baseline. Neste caso utilizamos o <a href="https://github.com/alfaneo-ai/brazilian-legal-text-benchmark"  class="external-link" target="_blank" rel="noopener">código disponibilizado pelo time do paper</a> e adicionamos o BERTugues. O modelo é utilizado para comparar se dois textos são do mesmo assunto ou não.</p>
 <table>
-<thead>
-<tr>
-<th>Modelo</th>
-<th>IMDB (F1)</th>
-<th>STJ (F1)</th>
-<th>PJERJ (F1)</th>
-<th>TJMS (F1)</th>
-<th>Média F1</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>BERT Multilinguagem</td>
-<td>72,0%</td>
-<td>30,4%</td>
-<td>63,8%</td>
-<td>65,0%</td>
-<td>57,8%</td>
-</tr>
-<tr>
-<td>Bertimbau-Base</td>
-<td>82,2%</td>
-<td>35,6%</td>
-<td>63,9%</td>
-<td>71,2%</td>
-<td>63,2%</td>
-</tr>
-<tr>
-<td>Bertimbau-Large</td>
-<td><strong>85,3%</strong></td>
-<td>43,0%</td>
-<td>63,8%</td>
-<td><strong>74,0%</strong></td>
-<td>66,5%</td>
-</tr>
-<tr>
-<td>BERTugues-Base</td>
-<td>84,0%</td>
-<td><strong>45,2%</strong></td>
-<td><strong>67,5%</strong></td>
-<td>70,0%</td>
-<td><strong>66,7%</strong></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Modelo</th>
+          <th>IMDB (F1)</th>
+          <th>STJ (F1)</th>
+          <th>PJERJ (F1)</th>
+          <th>TJMS (F1)</th>
+          <th>Média F1</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>BERT Multilinguagem</td>
+          <td>72,0%</td>
+          <td>30,4%</td>
+          <td>63,8%</td>
+          <td>65,0%</td>
+          <td>57,8%</td>
+      </tr>
+      <tr>
+          <td>Bertimbau-Base</td>
+          <td>82,2%</td>
+          <td>35,6%</td>
+          <td>63,9%</td>
+          <td>71,2%</td>
+          <td>63,2%</td>
+      </tr>
+      <tr>
+          <td>Bertimbau-Large</td>
+          <td><strong>85,3%</strong></td>
+          <td>43,0%</td>
+          <td>63,8%</td>
+          <td><strong>74,0%</strong></td>
+          <td>66,5%</td>
+      </tr>
+      <tr>
+          <td>BERTugues-Base</td>
+          <td>84,0%</td>
+          <td><strong>45,2%</strong></td>
+          <td><strong>67,5%</strong></td>
+          <td>70,0%</td>
+          <td><strong>66,7%</strong></td>
+      </tr>
+  </tbody>
 </table>
 <p>O BERTugues foi superior em 3 de 4 tarefa em relação ao Bertimbau-base e em 2 das 4 tarefas superior ao Bertimbau-Large, um modelo muito maior (3x mais parâmetros) e custoso computacionalmente.</p>
 <h2 id="exemplo-de-uso">
@@ -303,7 +301,7 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
   <section class="container">
     ©
     
-    2024
+    2025
      Ricardo Zago 
     ·
     
@@ -327,9 +325,8 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
 
 
   
+
   
-
-
 
   
 
@@ -361,5 +358,4 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
 
   
 </body>
-
 </html>

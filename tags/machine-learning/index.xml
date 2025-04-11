@@ -13,7 +13,7 @@
       <link>https://ricardozago.github.io/posts/placas-de-acelera%C3%A7%C3%A3o-para-machine-learning/</link>
       <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://ricardozago.github.io/posts/placas-de-acelera%C3%A7%C3%A3o-para-machine-learning/</guid>
-      <description>Durante uma parte do doutorado (atualmente interrompido) eu fiz uma disciplina chamada computação corporativa. Nesta disciplina tivemos a oportunidade de estudar diversos temas relacionados a servidores e serviços de computação utilizadas por grandes empresas.&#xA;Como trabalho final na disciplina escrevi um artigo sobre as diversas soluções de placas aceleradoras para Machine Learning. Indo deste as, finadas, Intel Xeon Phi, passando pelas onipresentes soluções da Nvidia, até soluções de startups chinesa.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://ricardozago.github.io/2019/tpu-rack.jpg&#34; alt=&#34;Google TPU em racks&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Durante uma parte do doutorado (atualmente interrompido) eu fiz uma disciplina chamada computação corporativa. Nesta disciplina tivemos a oportunidade de estudar diversos temas relacionados a servidores e serviços de computação utilizadas por grandes empresas.&lt;/p&gt;&#xA;&lt;p&gt;Como trabalho final na disciplina escrevi um artigo sobre as diversas soluções de placas aceleradoras para Machine Learning. Indo deste as, finadas, Intel Xeon Phi, passando pelas onipresentes soluções da Nvidia, até soluções de startups chinesa.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

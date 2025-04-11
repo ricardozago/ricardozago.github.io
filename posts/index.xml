@@ -13,42 +13,42 @@
       <link>https://ricardozago.github.io/posts/extra%C3%A7%C3%A3o-de-texto-de-documentos/</link>
       <pubDate>Sun, 17 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://ricardozago.github.io/posts/extra%C3%A7%C3%A3o-de-texto-de-documentos/</guid>
-      <description>Os arquivos PDF se tornaram um padrão amplamente adotado para compartilhar documentos de forma segura e confiável. No dia-a-dia eles são usados para visualizar e distribuir documentos, como livros, apostilas, manuais, contratos, preservando o layout original. Além disso, permitem a adição de assinaturas digitais, tornando-os ideais para transações legais e financeiras. Ainda mais agora com a Assinatura Eletrônica do portal gov.br, que permite a assinatura de contratos com a mesma validade de cartórios utilizando arquivos PDF.</description>
+      <description>&lt;p&gt;Os arquivos PDF se tornaram um padrão amplamente adotado para compartilhar documentos de forma segura e confiável. No dia-a-dia eles são usados para visualizar e distribuir documentos, como livros, apostilas, manuais, contratos, preservando o layout original. Além disso, permitem a adição de assinaturas digitais, tornando-os ideais para transações legais e financeiras. Ainda mais agora com a &lt;a href=&#34;https://www.gov.br/governodigital/pt-br/identidade/assinatura-eletronica&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Assinatura Eletrônica do portal gov.br&lt;/a&gt;, que permite a assinatura de contratos com a mesma validade de cartórios utilizando arquivos PDF.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exemplos SAS</title>
       <link>https://ricardozago.github.io/posts/exemplos-sas/</link>
       <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
       <guid>https://ricardozago.github.io/posts/exemplos-sas/</guid>
-      <description>O SAS é uma importante ferramenta de análise de dados muito utilizada no mundo empresarial. Seu uso no ambiente doméstico não é tão trivial quanto o Python ou R, que além de gratuitos estão a um download de distância.&#xA;No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de SAS University Edition, essa versão brevemente será substituída pelo SAS OnDemand for Academics. Essas versões podem ser a porta de entrada se você quer aprender a linguagem.</description>
+      <description>&lt;p&gt;O SAS é uma importante ferramenta de análise de dados muito utilizada no mundo empresarial. Seu uso no ambiente doméstico não é tão trivial quanto o Python ou R, que além de gratuitos estão a um download de distância.&lt;/p&gt;&#xA;&lt;p&gt;No caso do SAS é disponibilizado uma versão para uso acadêmico, chamada de &lt;a href=&#34;https://www.sas.com/pt_br/software/university-edition.html&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SAS University Edition&lt;/a&gt;, essa versão brevemente será substituída pelo &lt;a href=&#34;https://www.sas.com/pt_br/software/on-demand-for-academics/references/getting-started-with-sas-ondemand-for-academics-studio.html&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SAS OnDemand for Academics&lt;/a&gt;. Essas versões podem ser a porta de entrada se você quer aprender a linguagem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fitando Regressões Não Lineares</title>
       <link>https://ricardozago.github.io/posts/fitando-regress%C3%B5es-n%C3%A3o-lineares/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://ricardozago.github.io/posts/fitando-regress%C3%B5es-n%C3%A3o-lineares/</guid>
-      <description>Geralmente trabalhamos com regressões lineares: $ y = ax + b $. Como bem sabemos, nem todas as relações são lineares, como um paliativo pode ser utilizadas algumas transformações nos dados na hora de realizar a regressão para que passe a existir uma relação linear, exemplo $ y = ax^2 + b $.&#xA;Podem existir algumas relações que realizar estas transformações pode não ser tão fácil, ou mesmo impossíveis, como a Função de Von Bertalanffy, comum na biologia:</description>
+      <description>&lt;p&gt;Geralmente trabalhamos com regressões lineares: $ y = ax + b $. Como bem sabemos, nem todas as relações são lineares, como um paliativo pode ser utilizadas algumas transformações nos dados na hora de realizar a regressão para que passe a existir uma relação linear, exemplo $ y = ax^2 + b $.&lt;/p&gt;&#xA;&lt;p&gt;Podem existir algumas relações que realizar estas transformações pode não ser tão fácil, ou mesmo impossíveis, como a &lt;a href=&#34;https://en.wikipedia.org/wiki/Von_Bertalanffy_function&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Função de Von Bertalanffy&lt;/a&gt;, comum na biologia:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Equação ARIMAX</title>
       <link>https://ricardozago.github.io/posts/equa%C3%A7%C3%A3o-arimax/</link>
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://ricardozago.github.io/posts/equa%C3%A7%C3%A3o-arimax/</guid>
-      <description>Séries temporais são uma sequência de valores com uma marcação de data e/ou hora, um datastamp, alguns autores colocam a necessidade de serem igualmente espaçados, o que facilita o seu uso. Exemplos de séries temporais são a cotação do dólar, quantidade de chuva em uma cidade, total de vendas de um produto, etc. Elas são utilizadas nas mais diversas áreas, desde previsão de atendimentos em um hospital a demanda de um bem para alocação de produção.</description>
+      <description>&lt;p&gt;Séries temporais são uma sequência de valores com uma marcação de data e/ou hora, um &lt;em&gt;datastamp&lt;/em&gt;, alguns autores colocam a necessidade de serem igualmente espaçados, o que facilita o seu uso. Exemplos de séries temporais são a cotação do dólar, quantidade de chuva em uma cidade, total de vendas de um produto, etc. Elas são utilizadas nas mais diversas áreas, desde previsão de atendimentos em um hospital a demanda de um bem para alocação de produção.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[Livro] O Gene: Uma História Íntima - Siddhartha Mukherjee</title>
       <link>https://ricardozago.github.io/posts/livro-o-gene-uma-hist%C3%B3ria-%C3%ADntima-siddhartha-mukherjee/</link>
       <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
       <guid>https://ricardozago.github.io/posts/livro-o-gene-uma-hist%C3%B3ria-%C3%ADntima-siddhartha-mukherjee/</guid>
-      <description>Quem não teve um familiar com algum sério problema de saúde, ou você mesmo, e quis conhecer mais sobre a doença. Uma das maiores doenças da humanidade é o câncer, que sempre esteve presente na história, temos indícios de sua existência desde a antiguidade. Em 2010, Siddhartha Mukherjee, um oncologista americano nascido na Índia, lançou seu primeiro livro, O Imperador de Todos os Males: Uma Biografia do Câncer. O livro de 2010 é realmente uma biografia, contando a história desde a antiguidade, passando pelos tratamentos do século IXX, a criação de tratamentos efetivos no século XX, até os mais recentes no lançamento do livro.</description>
+      <description>&lt;p&gt;Quem não teve um familiar com algum sério problema de saúde, ou você mesmo, e quis conhecer mais sobre a doença. Uma das maiores doenças da humanidade é o câncer, que sempre esteve presente na história, temos indícios de sua existência desde a antiguidade. Em 2010, Siddhartha Mukherjee, um oncologista americano nascido na Índia, lançou seu primeiro livro, O Imperador de Todos os Males: Uma Biografia do Câncer. O livro de 2010 é realmente uma biografia, contando a história desde a antiguidade, passando pelos tratamentos do século IXX, a criação de tratamentos efetivos no século XX, até os mais recentes no lançamento do livro.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placas de aceleração para Machine Learning</title>
       <link>https://ricardozago.github.io/posts/placas-de-acelera%C3%A7%C3%A3o-para-machine-learning/</link>
       <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://ricardozago.github.io/posts/placas-de-acelera%C3%A7%C3%A3o-para-machine-learning/</guid>
-      <description>Durante uma parte do doutorado (atualmente interrompido) eu fiz uma disciplina chamada computação corporativa. Nesta disciplina tivemos a oportunidade de estudar diversos temas relacionados a servidores e serviços de computação utilizadas por grandes empresas.&#xA;Como trabalho final na disciplina escrevi um artigo sobre as diversas soluções de placas aceleradoras para Machine Learning. Indo deste as, finadas, Intel Xeon Phi, passando pelas onipresentes soluções da Nvidia, até soluções de startups chinesa.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://ricardozago.github.io/2019/tpu-rack.jpg&#34; alt=&#34;Google TPU em racks&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Durante uma parte do doutorado (atualmente interrompido) eu fiz uma disciplina chamada computação corporativa. Nesta disciplina tivemos a oportunidade de estudar diversos temas relacionados a servidores e serviços de computação utilizadas por grandes empresas.&lt;/p&gt;&#xA;&lt;p&gt;Como trabalho final na disciplina escrevi um artigo sobre as diversas soluções de placas aceleradoras para Machine Learning. Indo deste as, finadas, Intel Xeon Phi, passando pelas onipresentes soluções da Nvidia, até soluções de startups chinesa.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
