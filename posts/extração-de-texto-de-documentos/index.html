@@ -49,7 +49,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.2847c474d05002eb657a4b9ee874f01a2789f28af9e0ff92f3ec146b8d86a926.css" integrity="sha256-KEfEdNBQAutlekue6HTwGieJ8or54P&#43;S8&#43;wUa42GqSY=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.min.b445c6af0782ece71dbf68a731ef74cebb29d0f48c0b867631eb18227b727205.css" integrity="sha256-tEXGrweC7Ocdv2inMe90zrsp0PSMC4Z2MesYIntycgU=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -183,21 +183,21 @@
 </h2>
 <p>O pdfminer.six é uma lib para o Python focada em extrair informações do PDF, no momento iremos focar em extrair texto, mas também pode ser utilizada para extrair imagens. Ele extrai texto, documentos que são fotos com texto na foto, não são extraídos pelo pdfminer.six, neste caso vamos utilizar o tesseract.</p>
 <p>O comando para extrair todo o texto do PDF é bem simples:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python3" data-lang="python3"><span style="display:flex;"><span><span style="font-weight:bold">from</span> <span style="font-weight:bold">pdfminer.high_level</span> <span style="font-weight:bold">import</span> extract_text <span style="font-style:italic"># pip install pdfminer.six</span>
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">from</span> <span style="font-weight:bold">func_timeout</span> <span style="font-weight:bold">import</span> func_timeout, FunctionTimedOut <span style="font-style:italic"># pip install func-timeout</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python3" data-lang="python3"><span style="display:flex;"><span><span style="color:#f92672">from</span> pdfminer.high_level <span style="color:#f92672">import</span> extract_text <span style="color:#75715e"># pip install pdfminer.six</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> func_timeout <span style="color:#f92672">import</span> func_timeout, FunctionTimedOut <span style="color:#75715e"># pip install func-timeout</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">def</span> text_extract_pdfminer(file, max_pages, n_page_test):
-</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">try</span>:
-</span></span><span style="display:flex;"><span>        <span style="font-style:italic"># https://pdfminersix.readthedocs.io/en/latest/reference/highlevel.html#api-extract-text</span>
-</span></span><span style="display:flex;"><span>        text = func_timeout(pdfminer_timeout, <span style="font-weight:bold">lambda</span>: extract_text(file, maxpages = n_page_test))
-</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">except</span> FunctionTimedOut:
-</span></span><span style="display:flex;"><span>        text = <span style="font-style:italic">&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">if</span> len(text) &gt; 300:
-</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">try</span>:
-</span></span><span style="display:flex;"><span>            text = func_timeout(pdfminer_timeout, <span style="font-weight:bold">lambda</span>: extract_text(file, max_pages))
-</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">except</span> FunctionTimedOut:
-</span></span><span style="display:flex;"><span>            text = <span style="font-style:italic">&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">return</span> text</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">text_extract_pdfminer</span>(file, max_pages, n_page_test):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># https://pdfminersix.readthedocs.io/en/latest/reference/highlevel.html#api-extract-text</span>
+</span></span><span style="display:flex;"><span>        text <span style="color:#f92672">=</span> func_timeout(pdfminer_timeout, <span style="color:#66d9ef">lambda</span>: extract_text(file, maxpages <span style="color:#f92672">=</span> n_page_test))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> FunctionTimedOut:
+</span></span><span style="display:flex;"><span>        text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> len(text) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">300</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>            text <span style="color:#f92672">=</span> func_timeout(pdfminer_timeout, <span style="color:#66d9ef">lambda</span>: extract_text(file, max_pages))
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">except</span> FunctionTimedOut:
+</span></span><span style="display:flex;"><span>            text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> text</span></span></code></pre></div>
 <p>A função que realiza a extração é a extract_text. Gostaria de destacar algumas particularidades, dependendo do pdf, o pdfminer.six pode demorar muito tempo na extração, portanto utilizamos o func_timeout para limitar o tempo de execução (possivelmente utilizando um OCR posteriormente). Além disso, um PDF pode necessitar de OCR, pois não tem camada de texto, portanto analisamos as 3 primeiras páginas em busca de texto, caso não seja encontrado uma quantidade significativa de texto, retornamos uma string vazia.</p>
 <h2 id="pytesseract">
   pytesseract

@@ -52,7 +52,7 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.2847c474d05002eb657a4b9ee874f01a2789f28af9e0ff92f3ec146b8d86a926.css" integrity="sha256-KEfEdNBQAutlekue6HTwGieJ8or54P&#43;S8&#43;wUa42GqSY=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.min.b445c6af0782ece71dbf68a731ef74cebb29d0f48c0b867631eb18227b727205.css" integrity="sha256-tEXGrweC7Ocdv2inMe90zrsp0PSMC4Z2MesYIntycgU=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -227,45 +227,66 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
 </h2>
 <p>Diversos exemplos de uso estão disponíveis no nosso  <a href="https://github.com/ricardozago/BERTugues"  class="external-link" target="_blank" rel="noopener">nosso Github</a>. Para uma rápida consulta adicionamos 2 exemplos abaixo:</p>
 <p>Predição de palavras mascaradas (Masked Language Modeling):</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold">from</span> <span style="font-weight:bold">transformers</span> <span style="font-weight:bold">import</span> BertTokenizer, BertForMaskedLM, pipeline
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> transformers <span style="color:#f92672">import</span> BertTokenizer, BertForMaskedLM, pipeline
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>model = BertForMaskedLM.from_pretrained(<span style="font-style:italic">&#34;ricardoz/BERTugues-base-portuguese-cased&#34;</span>)
-</span></span><span style="display:flex;"><span>tokenizer = BertTokenizer.from_pretrained(<span style="font-style:italic">&#34;ricardoz/BERTugues-base-portuguese-cased&#34;</span>, do_lower_case=<span style="font-weight:bold">False</span>)
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> BertForMaskedLM<span style="color:#f92672">.</span>from_pretrained(<span style="color:#e6db74">&#34;ricardoz/BERTugues-base-portuguese-cased&#34;</span>)
+</span></span><span style="display:flex;"><span>tokenizer <span style="color:#f92672">=</span> BertTokenizer<span style="color:#f92672">.</span>from_pretrained(<span style="color:#e6db74">&#34;ricardoz/BERTugues-base-portuguese-cased&#34;</span>, do_lower_case<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>pipe = pipeline(<span style="font-style:italic">&#39;fill-mask&#39;</span>, model=model, tokenizer=tokenizer, top_k = 3)
-</span></span><span style="display:flex;"><span>pipe(<span style="font-style:italic">&#39;[CLS] Eduardo abriu os [MASK], mas não quis se levantar. Ficou deitado e viu que horas eram.&#39;</span>)
+</span></span><span style="display:flex;"><span>pipe <span style="color:#f92672">=</span> pipeline(<span style="color:#e6db74">&#39;fill-mask&#39;</span>, model<span style="color:#f92672">=</span>model, tokenizer<span style="color:#f92672">=</span>tokenizer, top_k <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>pipe(<span style="color:#e6db74">&#39;[CLS] Eduardo abriu os [MASK], mas não quis se levantar. Ficou deitado e viu que horas eram.&#39;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="font-style:italic"># [{&#39;score&#39;: 0.7272418141365051,</span>
-</span></span><span style="display:flex;"><span><span style="font-style:italic">#   &#39;token&#39;: 7292,</span>
-</span></span><span style="display:flex;"><span><span style="font-style:italic">#   &#39;token_str&#39;: &#39;olhos&#39;,</span>
-</span></span><span style="display:flex;"><span><span style="font-style:italic">#   &#39;sequence&#39;: &#39;Eduardo abriu os olhos, mas não quis se levantar. Ficou deitado e viu que horas eram.&#39;},</span>
-</span></span><span style="display:flex;"><span><span style="font-style:italic">#  {&#39;score&#39;: 0.2677205801010132,</span>
-</span></span><span style="display:flex;"><span><span style="font-style:italic">#   &#39;token&#39;: 12761,</span>
-</span></span><span style="display:flex;"><span><span style="font-style:italic">#   &#39;token_str&#39;: &#39;braços&#39;,</span>
-</span></span><span style="display:flex;"><span><span style="font-style:italic">#   &#39;sequence&#39;: &#39;Eduardo abriu os braços, mas não quis se levantar. Ficou deitado e viu que horas eram.&#39;},</span>
-</span></span><span style="display:flex;"><span><span style="font-style:italic">#  {&#39;score&#39;: 0.0007434834260493517,</span>
-</span></span><span style="display:flex;"><span><span style="font-style:italic">#   &#39;token&#39;: 24298,</span>
-</span></span><span style="display:flex;"><span><span style="font-style:italic">#   &#39;token_str&#39;: &#39;óculos&#39;,</span>
-</span></span><span style="display:flex;"><span><span style="font-style:italic">#   &#39;sequence&#39;: &#39;Eduardo abriu os óculos, mas não quis se levantar. Ficou deitado e viu que horas eram.&#39;}]</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># [{&#39;score&#39;: 0.7272418141365051,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   &#39;token&#39;: 7292,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   &#39;token_str&#39;: &#39;olhos&#39;,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   &#39;sequence&#39;: &#39;Eduardo abriu os olhos, mas não quis se levantar. Ficou deitado e viu que horas eram.&#39;},</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#  {&#39;score&#39;: 0.2677205801010132,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   &#39;token&#39;: 12761,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   &#39;token_str&#39;: &#39;braços&#39;,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   &#39;sequence&#39;: &#39;Eduardo abriu os braços, mas não quis se levantar. Ficou deitado e viu que horas eram.&#39;},</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#  {&#39;score&#39;: 0.0007434834260493517,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   &#39;token&#39;: 24298,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   &#39;token_str&#39;: &#39;óculos&#39;,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   &#39;sequence&#39;: &#39;Eduardo abriu os óculos, mas não quis se levantar. Ficou deitado e viu que horas eram.&#39;}]</span>
 </span></span></code></pre></div><p>Criação de um embedding para uma frase:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold">from</span> <span style="font-weight:bold">transformers</span> <span style="font-weight:bold">import</span> BertTokenizer, BertModel, pipeline
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">import</span> <span style="font-weight:bold">torch</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> transformers <span style="color:#f92672">import</span> BertTokenizer, BertModel, pipeline
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>model = BertModel.from_pretrained(<span style="font-style:italic">&#34;ricardoz/BERTugues-base-portuguese-cased&#34;</span>)
-</span></span><span style="display:flex;"><span>tokenizer = BertTokenizer.from_pretrained(<span style="font-style:italic">&#34;ricardoz/BERTugues-base-portuguese-cased&#34;</span>, do_lower_case=<span style="font-weight:bold">False</span>)
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> BertModel<span style="color:#f92672">.</span>from_pretrained(<span style="color:#e6db74">&#34;ricardoz/BERTugues-base-portuguese-cased&#34;</span>)
+</span></span><span style="display:flex;"><span>tokenizer <span style="color:#f92672">=</span> BertTokenizer<span style="color:#f92672">.</span>from_pretrained(<span style="color:#e6db74">&#34;ricardoz/BERTugues-base-portuguese-cased&#34;</span>, do_lower_case<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>input_ids = tokenizer.encode(<span style="font-style:italic">&#39;[CLS] Eduardo abriu os olhos, mas não quis se levantar. Ficou deitado e viu que horas eram.&#39;</span>, return_tensors=<span style="font-style:italic">&#39;pt&#39;</span>)
+</span></span><span style="display:flex;"><span>input_ids <span style="color:#f92672">=</span> tokenizer<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#39;[CLS] Eduardo abriu os olhos, mas não quis se levantar. Ficou deitado e viu que horas eram.&#39;</span>, return_tensors<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;pt&#39;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">with</span> torch.no_grad():
-</span></span><span style="display:flex;"><span>    last_hidden_state = model(input_ids).last_hidden_state[:, 0]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> torch<span style="color:#f92672">.</span>no_grad():
+</span></span><span style="display:flex;"><span>    last_hidden_state <span style="color:#f92672">=</span> model(input_ids)<span style="color:#f92672">.</span>last_hidden_state[:, <span style="color:#ae81ff">0</span>]
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>last_hidden_state
 </span></span><span style="display:flex;"><span>	
-</span></span><span style="display:flex;"><span><span style="font-style:italic"># tensor([[-1.5727e+00,  5.4707e-01, -2.6169e-01, -3.0714e-01, -9.4545e-01,</span>
-</span></span><span style="display:flex;"><span><span style="font-style:italic">#           4.1557e-01, -7.9884e-01, -2.1481e-01,  5.9792e-01, -1.4198e+00,</span>
-</span></span><span style="display:flex;"><span><span style="font-style:italic">#           1.1929e-01,  8.0228e-01,  5.4977e-01,  1.2710e+00, -2.9444e-01,</span>
-</span></span><span style="display:flex;"><span><span style="font-style:italic">#           1.3398e+00,  1.4413e-01,  8.2983e-01, -8.2349e-02,  1.8593e-01,</span>
-</span></span></code></pre></div><h2 id="mais-informações">
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># tensor([[-1.5727e+00,  5.4707e-01, -2.6169e-01, -3.0714e-01, -9.4545e-01,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#           4.1557e-01, -7.9884e-01, -2.1481e-01,  5.9792e-01, -1.4198e+00,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#           1.1929e-01,  8.0228e-01,  5.4977e-01,  1.2710e+00, -2.9444e-01,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#           1.3398e+00,  1.4413e-01,  8.2983e-01, -8.2349e-02,  1.8593e-01,</span>
+</span></span></code></pre></div><h2 id="publicações-que-fizeram-uso-do-bertugues">
+  Publicações que fizeram uso do BERTugues
+  <a class="heading-link" href="#publica%c3%a7%c3%b5es-que-fizeram-uso-do-bertugues">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <span class="sr-only">Link para o cabeçalho</span>
+  </a>
+</h2>
+<ul>
+<li>
+<p>Patrícia Gameiro, Marcio L. Inácio, Hugo G. Oliveira, Ana Alves - Sequence Labeling for Pun Location and Detection in Portuguese - Progress in Artificial Intelligence. EPIA 2024. Lecture Notes in Computer Science (Volume: 14969, November 2024) - DOI: <a href="https://doi.org/10.1007/978-3-031-73503-5_21"  class="external-link" target="_blank" rel="noopener">10.1007/978-3-031-73503-5_21</a></p>
+</li>
+<li>
+<p>Eugénio Ribeiro, Nuno Mamede, Jorge Baptista - Avaliação Automática do Nível de Complexidade de Textos em Português Europeu - Linguamática (Volume: 16, Número: 2, 2024) - DOI: <a href="https://doi.org/10.21814/lm.16.2.449"  class="external-link" target="_blank" rel="noopener">10.21814/lm.16.2.449</a></p>
+</li>
+<li>
+<p>Eugénio Ribeiro, Nuno Mamede, Jorge Baptista - Automatic Text Readability Assessment in European Portuguese - Proceedings of the 16th International Conference on Computational Processing of Portuguese (Vol. 1, Março 2024) - <a href="https://aclanthology.org/2024.propor-1.10/"  class="external-link" target="_blank" rel="noopener">Link</a></p>
+</li>
+<li>
+<p>Guilherme S. M. de C. Paes - Detecção de textos gerados por LLMs em português - Monografia (Ciência da Computação), Universidade Federal de Ouro Preto (Março 2025) - <a href="https://monografias.ufop.br/bitstream/35400000/7640/3/MONOGRAFIA_Detec%C3%A7%C3%A3oTextosGerados.pdf"  class="external-link" target="_blank" rel="noopener">Link</a></p>
+</li>
+</ul>
+<h2 id="mais-informações">
   Mais informações
   <a class="heading-link" href="#mais-informa%c3%a7%c3%b5es">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
