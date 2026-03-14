@@ -18,6 +18,7 @@
 <meta name="author" content="Ricardo Zago">
 <meta name="description" content="O BERTugues é um modelo de embedding de texto para o português Brasileiro treinato com dados exclusivamente em português.
 Use o BERTugues! Acesse pelo Hugging Face!
+Acesse nosso Github para tutoriais de uso e exemplos de aplicação!
 
 O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BERT, com os objetivos de Masked Language Modeling (MLM) e Next Sentence Prediction (NSP), com 1 milhão de steps, usando mais de 20 GB de textos. Como o Bertimbau, foi pré-treinado com o dataset BrWAC e a Wikipédia em português para o Tokenizador, contando com algumas melhorias no fluxo de treinamento, como:">
 <meta name="keywords" content="blog,desenvolvedor,pessoal">
@@ -28,6 +29,7 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
   <meta name="twitter:title" content="BERTugues">
   <meta name="twitter:description" content="O BERTugues é um modelo de embedding de texto para o português Brasileiro treinato com dados exclusivamente em português.
 Use o BERTugues! Acesse pelo Hugging Face!
+Acesse nosso Github para tutoriais de uso e exemplos de aplicação!
 O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BERT, com os objetivos de Masked Language Modeling (MLM) e Next Sentence Prediction (NSP), com 1 milhão de steps, usando mais de 20 GB de textos. Como o Bertimbau, foi pré-treinado com o dataset BrWAC e a Wikipédia em português para o Tokenizador, contando com algumas melhorias no fluxo de treinamento, como:">
 
 <meta property="og:url" content="https://ricardozago.github.io/bertugues/">
@@ -35,6 +37,7 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
   <meta property="og:title" content="BERTugues">
   <meta property="og:description" content="O BERTugues é um modelo de embedding de texto para o português Brasileiro treinato com dados exclusivamente em português.
 Use o BERTugues! Acesse pelo Hugging Face!
+Acesse nosso Github para tutoriais de uso e exemplos de aplicação!
 O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BERT, com os objetivos de Masked Language Modeling (MLM) e Next Sentence Prediction (NSP), com 1 milhão de steps, usando mais de 20 GB de textos. Como o Bertimbau, foi pré-treinado com o dataset BrWAC e a Wikipédia em português para o Tokenizador, contando com algumas melhorias no fluxo de treinamento, como:">
   <meta property="og:locale" content="pt_br">
   <meta property="og:type" content="article">
@@ -150,6 +153,7 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
 
     <p>O BERTugues é um modelo de embedding de texto para o português Brasileiro treinato com dados exclusivamente em português.</p>
 <p><a href="https://huggingface.co/ricardoz/BERTugues-base-portuguese-cased"  class="external-link" target="_blank" rel="noopener">Use o BERTugues! Acesse pelo Hugging Face!</a></p>
+<p><a href="https://github.com/ricardozago/BERTugues"  class="external-link" target="_blank" rel="noopener">Acesse nosso Github para tutoriais de uso e exemplos de aplicação!</a></p>
 <p><img src="Hugginface.png" alt="huggingface"></p>
 <p>O BERTugues foi pré-treinado seguindo os mesmos passos do <a href="https://arxiv.org/abs/1810.04805v2"  class="external-link" target="_blank" rel="noopener">paper original do BERT</a>, com os objetivos de Masked Language Modeling (MLM) e Next Sentence Prediction (NSP), com 1 milhão de <em>steps</em>, usando mais de 20 GB de textos. Como o <a href="https://huggingface.co/neuralmind/bert-base-portuguese-cased"  class="external-link" target="_blank" rel="noopener">Bertimbau</a>, foi pré-treinado com o dataset <a href="https://www.inf.ufrgs.br/pln/wiki/index.php?title=BrWaC"  class="external-link" target="_blank" rel="noopener">BrWAC</a> e a Wikipédia em português para o Tokenizador, contando com algumas melhorias no fluxo de treinamento, como:</p>
 <ul>
@@ -231,7 +235,7 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
 </h2>
 <p>Diversos exemplos de uso estão disponíveis no nosso  <a href="https://github.com/ricardozago/BERTugues"  class="external-link" target="_blank" rel="noopener">nosso Github</a>. Para uma rápida consulta adicionamos 2 exemplos abaixo:</p>
 <p>Predição de palavras mascaradas (Masked Language Modeling):</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold">from</span> <span style="font-weight:bold">transformers</span> <span style="font-weight:bold">import</span> BertTokenizer, BertForMaskedLM, pipeline
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold">from</span> <span style="font-weight:bold">transformers</span> <span style="font-weight:bold">import</span> BertTokenizer, BertForMaskedLM, pipeline
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>model = BertForMaskedLM.from_pretrained(<span style="font-style:italic">&#34;ricardoz/BERTugues-base-portuguese-cased&#34;</span>)
 </span></span><span style="display:flex;"><span>tokenizer = BertTokenizer.from_pretrained(<span style="font-style:italic">&#34;ricardoz/BERTugues-base-portuguese-cased&#34;</span>, do_lower_case=<span style="font-weight:bold">False</span>)
@@ -252,7 +256,7 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
 </span></span><span style="display:flex;"><span><span style="font-style:italic">#   &#39;token_str&#39;: &#39;óculos&#39;,</span>
 </span></span><span style="display:flex;"><span><span style="font-style:italic">#   &#39;sequence&#39;: &#39;Eduardo abriu os óculos, mas não quis se levantar. Ficou deitado e viu que horas eram.&#39;}]</span>
 </span></span></code></pre></div><p>Criação de um embedding para uma frase:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold">from</span> <span style="font-weight:bold">transformers</span> <span style="font-weight:bold">import</span> BertTokenizer, BertModel, pipeline
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold">from</span> <span style="font-weight:bold">transformers</span> <span style="font-weight:bold">import</span> BertTokenizer, BertModel, pipeline
 </span></span><span style="display:flex;"><span><span style="font-weight:bold">import</span> <span style="font-weight:bold">torch</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>model = BertModel.from_pretrained(<span style="font-style:italic">&#34;ricardoz/BERTugues-base-portuguese-cased&#34;</span>)
@@ -287,7 +291,16 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
 <p>Patrícia Gameiro, Marcio L. Inácio, Hugo G. Oliveira, Ana Alves - Sequence Labeling for Pun Location and Detection in Portuguese - Progress in Artificial Intelligence. EPIA 2024. Lecture Notes in Computer Science (Volume: 14969, November 2024) - DOI: <a href="https://doi.org/10.1007/978-3-031-73503-5_21"  class="external-link" target="_blank" rel="noopener">10.1007/978-3-031-73503-5_21</a></p>
 </li>
 <li>
+<p>Miguel Nunes Gonçalves - Filling the gaps in the European Portuguese NLP benchmarking - Dissertação de Mestrado (Engenharia Informática e de Computadores), Instituto Superior Técnico – Instituto Superior Técnico (Novembro 2024) - <a href="https://fenix.tecnico.ulisboa.pt/cursos/meic-t/dissertacao/1128253548923840"  class="external-link" target="_blank" rel="noopener">Link</a></p>
+</li>
+<li>
 <p>Guilherme S. M. de C. Paes - Detecção de textos gerados por LLMs em português - Monografia (Ciência da Computação), Universidade Federal de Ouro Preto (Março 2025) - <a href="https://monografias.ufop.br/bitstream/35400000/7640/3/MONOGRAFIA_Detec%C3%A7%C3%A3oTextosGerados.pdf"  class="external-link" target="_blank" rel="noopener">Link</a></p>
+</li>
+<li>
+<p>Annie Amorim, Gabriel Assis, Laura Ribeiro, Daniel de Oliveira, Aline Paes - Language Flavors in the Lusophone World: A BERT-Based Social Media Study of Portuguese in Brazil, Portugal, and Mozambique - Proceedings of the 40th ACM/SIGAPP Symposium on Applied Computing (SAC ’25, pp. 1927–1934) - DOI: <a href="https://doi.org/10.1145/3672608.3707931"  class="external-link" target="_blank" rel="noopener">10.1145/3672608.3707931</a></p>
+</li>
+<li>
+<p>Guilherme S. M. de C. Paes, Arthur Negrão de F. M. C., Guilherme Silva, Ederson Júnior, Eduardo Luz, Pedro Silva - Detection of texts generated by LLMs in Portuguese - Anais do XXII Encontro Nacional de Inteligência Artificial e Computacional (ENIAC 2025) - DOI: <a href="https://doi.org/10.5753/eniac.2025.13952"  class="external-link" target="_blank" rel="noopener">10.5753/eniac.2025.13952</a></p>
 </li>
 <li>
 <p>André Barbosa, Igor C. Silveira, Denis D. Mauá - An Empirical Analysis of Large Language Models for Automated Cross-Prompt Essay Trait Scoring in Brazilian Portuguese - Journal of the Brazilian Computer Society (Volume: 31, Número: 1, October 2025) - DOI: <a href="https://doi.org/10.5753/jbcs.2025.5817"  class="external-link" target="_blank" rel="noopener">10.5753/jbcs.2025.5817</a></p>
@@ -335,7 +348,7 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
   <section class="container">
     ©
     
-    2025
+    2026
      Ricardo Zago 
     ·
     
