@@ -22,22 +22,22 @@ Podem existir algumas relações que realizar estas transformações pode não s
 
 
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Fitando Regressões Não Lineares">
-  <meta name="twitter:description" content="Geralmente trabalhamos com regressões lineares: $ y = ax &#43; b $. Como bem sabemos, nem todas as relações são lineares, como um paliativo pode ser utilizadas algumas transformações nos dados na hora de realizar a regressão para que passe a existir uma relação linear, exemplo $ y = ax^2 &#43; b $.
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Fitando Regressões Não Lineares">
+	<meta name="twitter:description" content="Geralmente trabalhamos com regressões lineares: $ y = ax &#43; b $. Como bem sabemos, nem todas as relações são lineares, como um paliativo pode ser utilizadas algumas transformações nos dados na hora de realizar a regressão para que passe a existir uma relação linear, exemplo $ y = ax^2 &#43; b $.
 Podem existir algumas relações que realizar estas transformações pode não ser tão fácil, ou mesmo impossíveis, como a Função de Von Bertalanffy, comum na biologia:">
 
 <meta property="og:url" content="https://ricardozago.github.io/posts/fitando-regress%C3%B5es-n%C3%A3o-lineares/">
-  <meta property="og:site_name" content="Ricardo Zago">
-  <meta property="og:title" content="Fitando Regressões Não Lineares">
-  <meta property="og:description" content="Geralmente trabalhamos com regressões lineares: $ y = ax &#43; b $. Como bem sabemos, nem todas as relações são lineares, como um paliativo pode ser utilizadas algumas transformações nos dados na hora de realizar a regressão para que passe a existir uma relação linear, exemplo $ y = ax^2 &#43; b $.
+	<meta property="og:site_name" content="Ricardo Zago">
+	<meta property="og:title" content="Fitando Regressões Não Lineares">
+	<meta property="og:description" content="Geralmente trabalhamos com regressões lineares: $ y = ax &#43; b $. Como bem sabemos, nem todas as relações são lineares, como um paliativo pode ser utilizadas algumas transformações nos dados na hora de realizar a regressão para que passe a existir uma relação linear, exemplo $ y = ax^2 &#43; b $.
 Podem existir algumas relações que realizar estas transformações pode não ser tão fácil, ou mesmo impossíveis, como a Função de Von Bertalanffy, comum na biologia:">
-  <meta property="og:locale" content="pt_br">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2021-01-10T00:00:00+00:00">
-    <meta property="article:modified_time" content="2021-01-10T00:00:00+00:00">
-    <meta property="article:tag" content="Data Science">
+	<meta property="og:locale" content="pt_br">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2021-01-10T00:00:00+00:00">
+		<meta property="article:modified_time" content="2021-01-10T00:00:00+00:00">
+		<meta property="article:tag" content="Data Science">
 
 
 
@@ -186,7 +186,7 @@ Podem existir algumas relações que realizar estas transformações pode não s
 <p>$$Y = a - (a - b)exp (- c X)$$</p>
 <p>Gráfico de exemplo da função:</p>
 <figure class="centered"><img src="/2021/regressao_assintotica.png"
-    alt="Regressão Assintótica">
+			alt="Regressão Assintótica">
 </figure>
 
 <p>Mas como realizar essa regressão? O R já <a href="https://www.statforbiology.com/nonlinearregression/usefulequations#asymptotic_regression_model"  class="external-link" target="_blank" rel="noopener">conta com funções</a> com ela implementada, enquanto no Python (ao menos até a escrita desse artigo) é recomendável o uso da função <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html"  class="external-link" target="_blank" rel="noopener">curve_fit</a> do SciPy. Recomendo a leitura <a href="https://github.com/ricardozago/Notebooks-Jupyter/blob/master/Fitando%20Regress%C3%B5es%20N%C3%A3o%20Lineares.ipynb"  class="external-link" target="_blank" rel="noopener">deste notebook</a> para um exemplo de como fazer.</p>

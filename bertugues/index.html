@@ -25,22 +25,22 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
 
 
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BERTugues">
-  <meta name="twitter:description" content="O BERTugues é um modelo de embedding de texto para o português Brasileiro treinato com dados exclusivamente em português.
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="BERTugues">
+	<meta name="twitter:description" content="O BERTugues é um modelo de embedding de texto para o português Brasileiro treinato com dados exclusivamente em português.
 Use o BERTugues! Acesse pelo Hugging Face!
 Acesse nosso Github para tutoriais de uso e exemplos de aplicação!
 O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BERT, com os objetivos de Masked Language Modeling (MLM) e Next Sentence Prediction (NSP), com 1 milhão de steps, usando mais de 20 GB de textos. Como o Bertimbau, foi pré-treinado com o dataset BrWAC e a Wikipédia em português para o Tokenizador, contando com algumas melhorias no fluxo de treinamento, como:">
 
 <meta property="og:url" content="https://ricardozago.github.io/bertugues/">
-  <meta property="og:site_name" content="Ricardo Zago">
-  <meta property="og:title" content="BERTugues">
-  <meta property="og:description" content="O BERTugues é um modelo de embedding de texto para o português Brasileiro treinato com dados exclusivamente em português.
+	<meta property="og:site_name" content="Ricardo Zago">
+	<meta property="og:title" content="BERTugues">
+	<meta property="og:description" content="O BERTugues é um modelo de embedding de texto para o português Brasileiro treinato com dados exclusivamente em português.
 Use o BERTugues! Acesse pelo Hugging Face!
 Acesse nosso Github para tutoriais de uso e exemplos de aplicação!
 O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BERT, com os objetivos de Masked Language Modeling (MLM) e Next Sentence Prediction (NSP), com 1 milhão de steps, usando mais de 20 GB de textos. Como o Bertimbau, foi pré-treinado com o dataset BrWAC e a Wikipédia em português para o Tokenizador, contando com algumas melhorias no fluxo de treinamento, como:">
-  <meta property="og:locale" content="pt_br">
-  <meta property="og:type" content="article">
+	<meta property="og:locale" content="pt_br">
+	<meta property="og:type" content="article">
 
 
 
@@ -181,50 +181,50 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
 <p>Para comparar a performance testamos um problema de classificação de textos, utilizando a base de reviews de filmes do <a href="https://www.kaggle.com/datasets/luisfredgs/imdb-ptbr"  class="external-link" target="_blank" rel="noopener">IMDB</a>, que foi traduzida para o português e possui uma boa qualidade. Neste problema utilizamos a representação do BERTugues da frase e passamos ela por um modelo de Random Forest para realizar a classificação.</p>
 <p>Também utilizamos a comparação de performance do paper <a href="https://repositorio.ufms.br/handle/123456789/5119"  class="external-link" target="_blank" rel="noopener">JurisBERT: Transformer-based model for embedding legal texts</a>, que pré-treina um BERT especialmente para textos de um domínio, usando o BERT multilinguagem e o Bertimbau como baseline. Neste caso utilizamos o <a href="https://github.com/alfaneo-ai/brazilian-legal-text-benchmark"  class="external-link" target="_blank" rel="noopener">código disponibilizado pelo time do paper</a> e adicionamos o BERTugues. O modelo é utilizado para comparar se dois textos são do mesmo assunto ou não.</p>
 <table>
-  <thead>
-      <tr>
-          <th>Modelo</th>
-          <th>IMDB (F1)</th>
-          <th>STJ (F1)</th>
-          <th>PJERJ (F1)</th>
-          <th>TJMS (F1)</th>
-          <th>Média F1</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>BERT Multilinguagem</td>
-          <td>72,0%</td>
-          <td>30,4%</td>
-          <td>63,8%</td>
-          <td>65,0%</td>
-          <td>57,8%</td>
-      </tr>
-      <tr>
-          <td>Bertimbau-Base</td>
-          <td>82,2%</td>
-          <td>35,6%</td>
-          <td>63,9%</td>
-          <td>71,2%</td>
-          <td>63,2%</td>
-      </tr>
-      <tr>
-          <td>Bertimbau-Large</td>
-          <td><strong>85,3%</strong></td>
-          <td>43,0%</td>
-          <td>63,8%</td>
-          <td><strong>74,0%</strong></td>
-          <td>66,5%</td>
-      </tr>
-      <tr>
-          <td>BERTugues-Base</td>
-          <td>84,0%</td>
-          <td><strong>45,2%</strong></td>
-          <td><strong>67,5%</strong></td>
-          <td>70,0%</td>
-          <td><strong>66,7%</strong></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Modelo</th>
+					<th>IMDB (F1)</th>
+					<th>STJ (F1)</th>
+					<th>PJERJ (F1)</th>
+					<th>TJMS (F1)</th>
+					<th>Média F1</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>BERT Multilinguagem</td>
+					<td>72,0%</td>
+					<td>30,4%</td>
+					<td>63,8%</td>
+					<td>65,0%</td>
+					<td>57,8%</td>
+			</tr>
+			<tr>
+					<td>Bertimbau-Base</td>
+					<td>82,2%</td>
+					<td>35,6%</td>
+					<td>63,9%</td>
+					<td>71,2%</td>
+					<td>63,2%</td>
+			</tr>
+			<tr>
+					<td>Bertimbau-Large</td>
+					<td><strong>85,3%</strong></td>
+					<td>43,0%</td>
+					<td>63,8%</td>
+					<td><strong>74,0%</strong></td>
+					<td>66,5%</td>
+			</tr>
+			<tr>
+					<td>BERTugues-Base</td>
+					<td>84,0%</td>
+					<td><strong>45,2%</strong></td>
+					<td><strong>67,5%</strong></td>
+					<td>70,0%</td>
+					<td><strong>66,7%</strong></td>
+			</tr>
+	</tbody>
 </table>
 <p>O BERTugues foi superior em 3 de 4 tarefa em relação ao Bertimbau-base e em 2 das 4 tarefas superior ao Bertimbau-Large, um modelo muito maior (3x mais parâmetros) e custoso computacionalmente.</p>
 <h2 id="exemplo-de-uso">
@@ -329,6 +329,9 @@ O BERTugues foi pré-treinado seguindo os mesmos passos do paper original do BER
 </li>
 <li>
 <p>Rafael Torres Anchiêta, Roney Lira de Sales Santos, Raimundo Santos Moura - <strong>Token-Level Pun Location Using Multi-Layer BERT with Mixture of Experts</strong> - Proceedings of the 17th International Conference on Computational Processing of Portuguese (PROPOR 2026, Vol. 1, abril de 2026) - <a href="https://aclanthology.org/2026.propor-1.26/"  class="external-link" target="_blank" rel="noopener">Link</a></p>
+</li>
+<li>
+<p>Jonatas Henrique dos Santos, Julio C. S. Reis, Philipe de Freitas Melo, João Francisco Hecksher Olivetti, Thales Henrique Silva, Matheus Gontijo Guimaraes, Glaucio de Souza, Marcos Gonçalves, Fabrício Benevenuto, Filipe Belchior Bessa Zanovello, Marco Antônio Gonçalves Rodrigues, Cristiano Xavier Lima - <strong>WhatsApp Vaccine Discourse (WhaVax): An Expert-Annotated Dataset and Benchmark for Health Misinformation Detection</strong> - Proceedings of the International AAAI Conference on Web and Social Media (ICWSM 2026, Volume: 20, Número: 1, pp. 2768–2779, maio de 2026) - DOI: <a href="https://doi.org/10.1609/icwsm.v20i1.42781"  class="external-link" target="_blank" rel="noopener">10.1609/icwsm.v20i1.42781</a></p>
 </li>
 </ul>
 <h2 id="mais-informações">
