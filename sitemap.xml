@@ -2,57 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ricardozago.github.io/categories/blog/</loc>
-    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ricardozago.github.io/categories/</loc>
-    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ricardozago.github.io/tags/data-science/</loc>
-    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ricardozago.github.io/posts/extra%C3%A7%C3%A3o-de-texto-de-documentos/</loc>
-    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ricardozago.github.io/posts/</loc>
-    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ricardozago.github.io/</loc>
-    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ricardozago.github.io/tags/</loc>
-    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ricardozago.github.io/posts/exemplos-sas/</loc>
-    <lastmod>2021-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ricardozago.github.io/posts/fitando-regress%C3%B5es-n%C3%A3o-lineares/</loc>
-    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ricardozago.github.io/posts/equa%C3%A7%C3%A3o-arimax/</loc>
-    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ricardozago.github.io/posts/livro-o-gene-uma-hist%C3%B3ria-%C3%ADntima-siddhartha-mukherjee/</loc>
-    <lastmod>2019-03-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ricardozago.github.io/tags/livros/</loc>
-    <lastmod>2019-03-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ricardozago.github.io/tags/machine-learning/</loc>
-    <lastmod>2019-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ricardozago.github.io/posts/placas-de-acelera%C3%A7%C3%A3o-para-machine-learning/</loc>
-    <lastmod>2019-01-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://ricardozago.github.io/about/</loc>
   </url><url>
     <loc>https://ricardozago.github.io/authors/</loc>
   </url><url>
     <loc>https://ricardozago.github.io/bertugues/</loc>
   </url><url>
-    <loc>https://ricardozago.github.io/disciplinas/</loc>
+    <loc>https://ricardozago.github.io/categories/</loc>
   </url><url>
-    <loc>https://ricardozago.github.io/disciplinas/embarcados/</loc>
+    <loc>https://ricardozago.github.io/disciplinas/</loc>
   </url><url>
     <loc>https://ricardozago.github.io/disciplinas/datascience/</loc>
   </url><url>
@@ -60,7 +18,11 @@
   </url><url>
     <loc>https://ricardozago.github.io/publicacoes/</loc>
   </url><url>
+    <loc>https://ricardozago.github.io/</loc>
+  </url><url>
     <loc>https://ricardozago.github.io/series/</loc>
+  </url><url>
+    <loc>https://ricardozago.github.io/tags/</loc>
   </url><url>
     <loc>https://ricardozago.github.io/tsknn/</loc>
   </url>
